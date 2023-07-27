@@ -1,0 +1,32 @@
+parameters,vlaue
+B rotation radius,57.3852
+B rotation to plane,126.3665
+U_motor_scale_factor,1.2325
+U_motor_offset,0.8919
+xlimit_left,150
+xlimit_right,145
+ylimit_bakcward,90
+ylimit_forward,4
+zlimit_up,94
+zlimit_down,24
+blimit_left,90
+blimit_right,90
+C_axi_maxfeed,200
+C_axi_minspeed,10
+C_Button_speed,70
+polish_axi_maxfeed,400
+polish_axi_minfeed,80
+x_axi_hand_maxfeed,400
+y_axi_hand_maxfeed ,400
+z_axi_hand_maxfeed,400
+b_axi_hand_maxfeed,15
+first_position_feed,500
+x_devia_value,16
+y_devia_value,16
+z_devia_value,-6
+b_devia_value,82
+z_axi_first_jogdownfeed,360
+cloth_thickness,0.2
+
+
+71

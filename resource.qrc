@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Image/concave.jpg</file>
+        <file>Image/formula.PNG</file>
+        <file>Image/logo.jpg</file>
+        <file>Image/open.jpg</file>
+        <file>Image/open.jpg.png</file>
+        <file>Image/picture_ao.PNG</file>
+        <file>Image/picture_plane.PNG</file>
+        <file>Image/picture_tu.PNG</file>
+        <file>Image/Question.jpg</file>
+        <file>Image/Question.png</file>
+        <file>Image/qusetion.png</file>
+        <file>Image/raised.jpg</file>
+        <file>Image/warning.png</file>
+        <file>Image/wenhao.png</file>
+        <file>Image/close.jpeg</file>
+        <file>Image/connect.jpeg</file>
+        <file>Image/Disconnect (2).jpeg</file>
+        <file>Image/exit.jpeg</file>
+        <file>Image/file.jpeg</file>
+        <file>Image/reset_value.jpg</file>
+        <file>Image/system_value_setting.jpeg</file>
+        <file>Image/104.bmp</file>
+        <file>Image/122.bmp</file>
+        <file>Image/128.bmp</file>
+        <file>Image/514.bmp</file>
+        <file>Image/704.bmp</file>
+        <file>Image/706.bmp</file>
+        <file>Image/804.bmp</file>
+        <file>Image/document.jpeg</file>
+        <file>Image/port.jpeg</file>
+        <file>Image/out.jpeg</file>
+    </qresource>
+</RCC>

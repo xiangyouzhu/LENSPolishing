@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>422</width>
+    <height>427</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(85, 170, 255);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>3ds</family>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>系统参数设定表</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+/*按钮普通态*/
+QTableWidget{
+background-color: rgb(255, 255, 255);
+       /*   border-style: outset;
+         border-width: 2px;
+         border-color: #dadbde;
+         border-radius: 6px;
+        background-color: qlineargradient(x1: 0, y1: 0, x2:0, y2:1,stop: 0 #f0f4f8, stop: 1 #d2d4d8); */   
+}
+
+
+/*按钮停留态*/
+QTableWidget:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(255 , 255 , 255);
+}
+
+/*按钮按下态*/
+QTableWidget:pressed
+{
+    /*背景颜色*/  
+    background-color:rgb(14 , 135 , 228);
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+}</string>
+       </property>
+       <row>
+        <property name="text">
+         <string>B轴回转径</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>B轴回转中心到平台距离</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>抛光轴电压转速比例因子</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>抛光轴电压转速比例一次变换偏差</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>X轴行程左极限位置</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>X轴行程右极限位置</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Y轴行程后极限位置</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Y轴行程前极限位置</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Z轴行程上极限位置</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Z轴行程下极限位置</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>B轴行程左极限位置</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>B轴行程右极限位置</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>C轴最大速度</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>C轴最小速度</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>C轴按钮转速</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>抛光轴最大速度</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>抛光轴最小速度</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>X轴手动最大速度</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Y轴手动最大速度</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Z轴手动最大速度</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>B轴手动最大速度</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>单段抛X B Z 到初始位进给速度</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>X轴固定偏移量</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Y轴固定偏移量</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Z轴固定偏移量</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>B轴固定偏移量</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>单段抛Z轴到初始位移动速度</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>抛光垫压缩最小剩余量</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>数值</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>单位</string>
+        </property>
+       </column>
+       <item row="0" column="1">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </item>
+       <item row="1" column="1">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </item>
+       <item row="2" column="1">
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item row="4" column="1">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </item>
+       <item row="5" column="1">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </item>
+       <item row="6" column="1">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </item>
+       <item row="7" column="1">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </item>
+       <item row="8" column="1">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </item>
+       <item row="9" column="1">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </item>
+       <item row="10" column="1">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </item>
+       <item row="11" column="1">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </item>
+       <item row="12" column="1">
+        <property name="text">
+         <string>rpm</string>
+        </property>
+       </item>
+       <item row="13" column="1">
+        <property name="text">
+         <string>rpm</string>
+        </property>
+       </item>
+       <item row="14" column="1">
+        <property name="text">
+         <string>rpm</string>
+        </property>
+       </item>
+       <item row="15" column="1">
+        <property name="text">
+         <string>rpm</string>
+        </property>
+       </item>
+       <item row="16" column="1">
+        <property name="text">
+         <string>rpm</string>
+        </property>
+       </item>
+       <item row="17" column="1">
+        <property name="text">
+         <string>mm/min</string>
+        </property>
+       </item>
+       <item row="18" column="1">
+        <property name="text">
+         <string>mm/min</string>
+        </property>
+       </item>
+       <item row="19" column="1">
+        <property name="text">
+         <string>mm/min</string>
+        </property>
+       </item>
+       <item row="20" column="1">
+        <property name="text">
+         <string>度/S</string>
+        </property>
+       </item>
+       <item row="21" column="1">
+        <property name="text">
+         <string>mm/min</string>
+        </property>
+       </item>
+       <item row="22" column="1">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </item>
+       <item row="23" column="1">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </item>
+       <item row="24" column="1">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </item>
+       <item row="25" column="1">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </item>
+       <item row="26" column="1">
+        <property name="text">
+         <string>mm/min</string>
+        </property>
+       </item>
+       <item row="27" column="1">
+        <property name="text">
+         <string>mm</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButton">
+        <property name="styleSheet">
+         <string notr="true">/*按钮普通态*/
+QPushButton{
+         border-style: outset;
+         border-width: 2px;
+         border-color: #dadbde;
+         border-radius: 6px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2:0, y2:1,stop: 0 #f0f4f8, stop: 1 #d2d4d8);    
+}
+
+
+/*按钮停留态*/
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(44 , 137 , 255);
+}
+
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    background-color:rgb(14 , 135 , 228);
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+}</string>
+        </property>
+        <property name="text">
+         <string>应用</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="styleSheet">
+         <string notr="true">/*按钮普通态*/
+QPushButton{
+         border-style: outset;
+         border-width: 2px;
+         border-color: #dadbde;
+         border-radius: 6px;
+         background-color: qlineargradient(x1: 0, y1: 0, x2:0, y2:1,stop: 0 #f0f4f8, stop: 1 #d2d4d8);    
+}
+
+
+/*按钮停留态*/
+QPushButton:hover
+{
+    /*背景颜色*/  
+    background-color:rgb(44 , 137 , 255);
+}
+
+/*按钮按下态*/
+QPushButton:pressed
+{
+    /*背景颜色*/  
+    background-color:rgb(14 , 135 , 228);
+    /*左内边距为3像素，让按下时字向右移动3像素*/  
+    padding-left:3px;
+    /*上内边距为3像素，让按下时字向下移动3像素*/  
+    padding-top:3px;
+}</string>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

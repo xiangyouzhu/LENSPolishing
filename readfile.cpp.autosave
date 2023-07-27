@@ -1,0 +1,87 @@
+#include "readfile.h"
+#include"mainwindow.h"
+using namespace  Ui;
+Ui::MainWindow *ui = nullptr;
+
+void ui_init(Ui::MainWindow *ui_ptr)
+{
+    ui = ui_ptr;
+}
+
+void readFileToshapeGUi()
+{
+    QString str;//参数文件字符
+    QString strPath=QCoreApplication::applicationDirPath();//获取程序当前路径
+    QDir dir(strPath);//实例化文件路径类
+    QFile *file=new QFile();//实例化文件读取对象
+    QStringList list;
+    QString filepath=dir.path()+"\\paramenter_shape.txt";
+    if(filepath.isEmpty())//取消读取
+        return;
+    file->setFileName(filepath);//目标文件
+
+    if(!file->open(QIODevice::ReadOnly|QIODevice::Text))
+    {
+        QMessageBox::information(NULL,"提示！","读取失败！");
+      // QMessageBox()
+        return;
+
+    }
+
+    while (!file->atEnd())
+    {
+
+        str=file->readLine();
+        str=str.remove("\n");
+        list.append(str);
+
+    }
+
+ui->lineEdit_Lensname->setText(list.at(0).split(":").at(1));//镜片名称
+ui->lineEdit_HC->setText(list.at(2).split(":").at(1));
+ui->lineEdit_HE->setText(list.at(3).split(":").at(1));
+ui->lineEdit_H->setText(list.at(4).split(":").at(1));
+ui->lineEdit_DP->setText(list.at(5).split(":").at(1));
+ui->lineEdit_D->setText(list.at(6).split(":").at(1));
+ui->lineEdit_R->setText(list.at(7).split(":").at(1));
+ui->lineEdit_K->setText(list.at(8).split(":").at(1));
+ui->lineEdit_A1->setText(list.at(9).split(":").at(1));
+ui->lineEdit_A2->setText(list.at(10).split(":").at(1));
+ui->lineEdit_A3->setText(list.at(11).split(":").at(1));
+ui->lineEdit_A4->setText(list.at(12).split(":").at(1));
+ui->lineEdit_A5->setText(list.at(13).split(":").at(1));
+ui->lineEdit_A6->setText(list.at(14).split(":").at(1));
+ui->lineEdit_A7->setText(list.at(15).split(":").at(1));
+ui->lineEdit_A8->setText(list.at(16).split(":").at(1));
+ui->lineEdit_A9->setText(list.at(17).split(":").at(1));
+ui->lineEdit_A10->setText(list.at(18).split(":").at(1));
+ui->lineEdit_A11->setText(list.at(19).split(":").at(1));
+ui->lineEdit_A12->setText(list.at(20).split(":").at(1));
+ui->lineEdit_A13->setText(list.at(21).split(":").at(1));
+ui->lineEdit_A14->setText(list.at(22).split(":").at(1));
+ui->lineEdit_A15->setText(list.at(23).split(":").at(1));
+ui->lineEdit_A16->setText(list.at(24).split(":").at(1));
+ui->lineEdit_A17->setText(list.at(25).split(":").at(1));
+ui->lineEdit_A18->setText(list.at(26).split(":").at(1));
+ui->lineEdit_A19->setText(list.at(27).split(":").at(1));
+ui->lineEdit_A20->setText(list.at(28).split(":").at(1));
+ui->lineEdit_yuan_r->setText(list.at(29).split(":").at(1));
+
+QString shape_type=list.at(1).split(":").at(1);
+int shape_id=shape_type.toInt();
+switch (shape_id)
+{
+case 1:
+    ui->Lens_ao->setChecked(true);
+    break;
+case 2:
+    ui->Lens_tu->setChecked(true);
+    break;
+case 3:
+    ui->Lens_plane->setChecked(true);
+    break;
+}
+file->close();
+delete file;
+    
+}
