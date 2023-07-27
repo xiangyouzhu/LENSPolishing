@@ -1,6 +1,6 @@
 #include <windows.h>
 
-IDI_ICON1	ICON	DISCARDABLE	"F:\\QT_project_store\\LensPolishing\\logo1.ico"
+IDI_ICON1	ICON	DISCARDABLE	"H:\\QT_project_store\\LensPolishing\\logo1.ico"
 
 VS_VERSION_INFO VERSIONINFO
 	FILEVERSION 0,0,0,0

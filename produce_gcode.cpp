@@ -65,6 +65,8 @@ double** Produce_Gcode::aspheric(double curvature_compensate,double first_posito
              double T[a + 1];  //两点间时间
              double X2[a + 1];//x移动坐标
              double r0[a + 1];//点到转动中心的夹角
+
+
              double flat_v_1p[] ={ 27.804, 24.2575, 16.5767, 11.2156, 9.2657, 8.3414, 7.4582,
                                    6.7514, 6.3777, 5.9989, 5.6724, 5.4287, 5.2395, 5.0569, 4.8999,
                                    4.7708, 4.6671, 4.5711, 4.482, 4.3991, 4.3219, 4.2464, 4.1822,
