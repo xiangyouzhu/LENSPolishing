@@ -158,7 +158,6 @@ public:
     QVBoxLayout *verticalLayout;
     QSpacerItem *horizontalSpacer_3;
     QGridLayout *gridLayout_15;
-    QSpacerItem *verticalSpacer;
     QGroupBox *groupBox_6;
     QHBoxLayout *horizontalLayout_22;
     QVBoxLayout *verticalLayout_2;
@@ -195,15 +194,6 @@ public:
     QLabel *label_141;
     QLineEdit *lineEdit_Toolhigh;
     QLabel *label_134;
-    QGroupBox *groupBox_5;
-    QHBoxLayout *horizontalLayout_23;
-    QGridLayout *gridLayout_9;
-    QLabel *label_3;
-    QLineEdit *lineEdit_constCSpeed;
-    QLabel *label_40;
-    QLabel *label_54;
-    QLineEdit *lineEdit_Toolspeed;
-    QLabel *label_41;
     QGroupBox *groupBox_7;
     QVBoxLayout *verticalLayout_11;
     QGridLayout *gridLayout;
@@ -217,6 +207,18 @@ public:
     QComboBox *comboBox_Cdirect;
     QLabel *label_51;
     QComboBox *comboBox_toolRaidus;
+    QSpacerItem *verticalSpacer;
+    QGroupBox *groupBox_5;
+    QHBoxLayout *horizontalLayout_23;
+    QGridLayout *gridLayout_9;
+    QLabel *label_3;
+    QLineEdit *lineEdit_constCSpeed;
+    QLabel *label_40;
+    QLabel *label_54;
+    QLineEdit *lineEdit_Toolspeed;
+    QLabel *label_41;
+    QGroupBox *groupBox_17;
+    QLabel *label_84;
     QGroupBox *groupBox_9;
     QGridLayout *gridLayout_24;
     QPushButton *pushButton_13;
@@ -225,11 +227,13 @@ public:
     QPushButton *pushButton_44;
     QSpacerItem *horizontalSpacer_7;
     QWidget *page_5;
-    QCustomPlot *customPlot_2;
-    QPushButton *pushButton_50;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *verticalLayout_10;
+    QHBoxLayout *horizontalLayout_7;
     QLabel *label_60;
     QLineEdit *lineEdit_dataname;
     QPushButton *pushButton_15;
+    QCustomPlot *customPlot_2;
     QWidget *page_8;
     QGridLayout *gridLayout_27;
     QTextEdit *textEdit;
@@ -248,6 +252,13 @@ public:
     QLineEdit *lineEdit_ProcessCycle_3;
     QWidget *page_6;
     QGridLayout *gridLayout_29;
+    QGroupBox *groupBox_10;
+    QHBoxLayout *horizontalLayout_8;
+    QPushButton *pushButton_16;
+    QSpacerItem *horizontalSpacer_12;
+    QPushButton *pushButton_17;
+    QSpacerItem *horizontalSpacer_5;
+    QSpacerItem *horizontalSpacer_6;
     QVBoxLayout *verticalLayout_4;
     QHBoxLayout *horizontalLayout;
     QLabel *label_4;
@@ -298,12 +309,6 @@ public:
     QLineEdit *lineEdit_22;
     QLabel *label_82;
     QSpacerItem *horizontalSpacer_11;
-    QSpacerItem *horizontalSpacer_5;
-    QGroupBox *groupBox_10;
-    QHBoxLayout *horizontalLayout_8;
-    QPushButton *pushButton_16;
-    QPushButton *pushButton_17;
-    QSpacerItem *horizontalSpacer_6;
     QWidget *page_7;
     QGridLayout *gridLayout_25;
     QSpacerItem *horizontalSpacer_8;
@@ -447,7 +452,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(1053, 768);
+        MainWindow->resize(1145, 791);
         QSizePolicy sizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -512,7 +517,7 @@ public:
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         stackedWidget = new QStackedWidget(centralWidget);
         stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
-        stackedWidget->setGeometry(QRect(9, 9, 1035, 671));
+        stackedWidget->setGeometry(QRect(9, 9, 1140, 706));
         stackedWidget->setMinimumSize(QSize(0, 1));
         stackedWidget->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 170, 255);"));
         page = new QWidget();
@@ -677,6 +682,9 @@ public:
         gridLayout_28->setObjectName(QString::fromUtf8("gridLayout_28"));
         stackedWidget_2 = new QStackedWidget(groupBox_16);
         stackedWidget_2->setObjectName(QString::fromUtf8("stackedWidget_2"));
+        QFont font3;
+        font3.setPointSize(11);
+        stackedWidget_2->setFont(font3);
         stackedWidget_2->setLayoutDirection(Qt::LeftToRight);
         stackedWidget_2->setStyleSheet(QString::fromUtf8("/*\346\214\211\351\222\256\346\231\256\351\200\232\346\200\201*/\n"
 "QPushButton{\n"
@@ -719,16 +727,17 @@ public:
         gridLayout_13->setObjectName(QString::fromUtf8("gridLayout_13"));
         label_2 = new QLabel(page_3);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        QFont font3;
-        font3.setFamily(QString::fromUtf8("\345\256\213\344\275\223"));
-        font3.setPointSize(12);
-        label_2->setFont(font3);
+        QFont font4;
+        font4.setFamily(QString::fromUtf8("\345\256\213\344\275\223"));
+        font4.setPointSize(12);
+        label_2->setFont(font4);
         label_2->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);"));
 
         gridLayout_13->addWidget(label_2, 0, 0, 1, 1);
 
         lineEdit_Lensname = new QLineEdit(page_3);
         lineEdit_Lensname->setObjectName(QString::fromUtf8("lineEdit_Lensname"));
+        lineEdit_Lensname->setMinimumSize(QSize(0, 30));
         lineEdit_Lensname->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_13->addWidget(lineEdit_Lensname, 0, 1, 1, 1);
@@ -745,19 +754,24 @@ public:
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         pushButton_7 = new QPushButton(groupBox_3);
         pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
-        pushButton_7->setMinimumSize(QSize(0, 20));
+        pushButton_7->setMinimumSize(QSize(0, 30));
+        QFont font5;
+        font5.setPointSize(12);
+        pushButton_7->setFont(font5);
 
         horizontalLayout_3->addWidget(pushButton_7);
 
         pushButton_10 = new QPushButton(groupBox_3);
         pushButton_10->setObjectName(QString::fromUtf8("pushButton_10"));
-        pushButton_10->setMinimumSize(QSize(0, 20));
+        pushButton_10->setMinimumSize(QSize(0, 30));
+        pushButton_10->setFont(font5);
 
         horizontalLayout_3->addWidget(pushButton_10);
 
         pushButton_11 = new QPushButton(groupBox_3);
         pushButton_11->setObjectName(QString::fromUtf8("pushButton_11"));
-        pushButton_11->setMinimumSize(QSize(0, 20));
+        pushButton_11->setMinimumSize(QSize(0, 30));
+        pushButton_11->setFont(font5);
 
         horizontalLayout_3->addWidget(pushButton_11);
 
@@ -773,6 +787,7 @@ public:
         sizePolicy.setHeightForWidth(groupBox_2->sizePolicy().hasHeightForWidth());
         groupBox_2->setSizePolicy(sizePolicy);
         groupBox_2->setMaximumSize(QSize(241, 271));
+        groupBox_2->setFont(font5);
         groupBox_2->setStyleSheet(QString::fromUtf8(""));
         gridLayout_18 = new QGridLayout(groupBox_2);
         gridLayout_18->setSpacing(6);
@@ -780,11 +795,13 @@ public:
         gridLayout_18->setObjectName(QString::fromUtf8("gridLayout_18"));
         label_8 = new QLabel(groupBox_2);
         label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setFont(font5);
 
         gridLayout_18->addWidget(label_8, 0, 0, 1, 1);
 
         lineEdit_HC = new QLineEdit(groupBox_2);
         lineEdit_HC->setObjectName(QString::fromUtf8("lineEdit_HC"));
+        lineEdit_HC->setMinimumSize(QSize(0, 30));
         lineEdit_HC->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_18->addWidget(lineEdit_HC, 0, 1, 1, 1);
@@ -796,11 +813,13 @@ public:
 
         label_9 = new QLabel(groupBox_2);
         label_9->setObjectName(QString::fromUtf8("label_9"));
+        label_9->setFont(font5);
 
         gridLayout_18->addWidget(label_9, 1, 0, 1, 1);
 
         lineEdit_HE = new QLineEdit(groupBox_2);
         lineEdit_HE->setObjectName(QString::fromUtf8("lineEdit_HE"));
+        lineEdit_HE->setMinimumSize(QSize(0, 30));
         lineEdit_HE->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_18->addWidget(lineEdit_HE, 1, 1, 1, 1);
@@ -812,11 +831,13 @@ public:
 
         label_114 = new QLabel(groupBox_2);
         label_114->setObjectName(QString::fromUtf8("label_114"));
+        label_114->setFont(font5);
 
         gridLayout_18->addWidget(label_114, 2, 0, 1, 1);
 
         lineEdit_yuan_r = new QLineEdit(groupBox_2);
         lineEdit_yuan_r->setObjectName(QString::fromUtf8("lineEdit_yuan_r"));
+        lineEdit_yuan_r->setMinimumSize(QSize(0, 30));
         lineEdit_yuan_r->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_18->addWidget(lineEdit_yuan_r, 2, 1, 1, 1);
@@ -828,11 +849,13 @@ public:
 
         label_12 = new QLabel(groupBox_2);
         label_12->setObjectName(QString::fromUtf8("label_12"));
+        label_12->setFont(font5);
 
         gridLayout_18->addWidget(label_12, 3, 0, 1, 1);
 
         lineEdit_D = new QLineEdit(groupBox_2);
         lineEdit_D->setObjectName(QString::fromUtf8("lineEdit_D"));
+        lineEdit_D->setMinimumSize(QSize(0, 30));
         lineEdit_D->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_18->addWidget(lineEdit_D, 3, 1, 1, 1);
@@ -844,11 +867,13 @@ public:
 
         label_11 = new QLabel(groupBox_2);
         label_11->setObjectName(QString::fromUtf8("label_11"));
+        label_11->setFont(font5);
 
         gridLayout_18->addWidget(label_11, 4, 0, 1, 1);
 
         lineEdit_DP = new QLineEdit(groupBox_2);
         lineEdit_DP->setObjectName(QString::fromUtf8("lineEdit_DP"));
+        lineEdit_DP->setMinimumSize(QSize(0, 30));
         lineEdit_DP->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_18->addWidget(lineEdit_DP, 4, 1, 1, 1);
@@ -870,17 +895,20 @@ public:
         groupBox->setSizePolicy(sizePolicy1);
         groupBox->setMinimumSize(QSize(241, 0));
         groupBox->setMaximumSize(QSize(221, 71));
+        groupBox->setFont(font5);
         horizontalLayout_4 = new QHBoxLayout(groupBox);
         horizontalLayout_4->setSpacing(6);
         horizontalLayout_4->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
         Lens_ao = new QRadioButton(groupBox);
         Lens_ao->setObjectName(QString::fromUtf8("Lens_ao"));
+        Lens_ao->setFont(font5);
 
         horizontalLayout_4->addWidget(Lens_ao);
 
         Lens_tu = new QRadioButton(groupBox);
         Lens_tu->setObjectName(QString::fromUtf8("Lens_tu"));
+        Lens_tu->setFont(font5);
 
         horizontalLayout_4->addWidget(Lens_tu);
 
@@ -897,6 +925,7 @@ public:
 
         groupBox_4 = new QGroupBox(page_3);
         groupBox_4->setObjectName(QString::fromUtf8("groupBox_4"));
+        groupBox_4->setFont(font5);
         horizontalLayout_17 = new QHBoxLayout(groupBox_4);
         horizontalLayout_17->setSpacing(6);
         horizontalLayout_17->setContentsMargins(11, 11, 11, 11);
@@ -911,6 +940,7 @@ public:
 
         lineEdit_R = new QLineEdit(groupBox_4);
         lineEdit_R->setObjectName(QString::fromUtf8("lineEdit_R"));
+        lineEdit_R->setMinimumSize(QSize(0, 30));
         lineEdit_R->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_R, 0, 1, 1, 1);
@@ -922,6 +952,7 @@ public:
 
         lineEdit_K = new QLineEdit(groupBox_4);
         lineEdit_K->setObjectName(QString::fromUtf8("lineEdit_K"));
+        lineEdit_K->setMinimumSize(QSize(0, 30));
         lineEdit_K->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_K, 1, 1, 1, 1);
@@ -933,6 +964,7 @@ public:
 
         lineEdit_A1 = new QLineEdit(groupBox_4);
         lineEdit_A1->setObjectName(QString::fromUtf8("lineEdit_A1"));
+        lineEdit_A1->setMinimumSize(QSize(0, 30));
         lineEdit_A1->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_A1, 2, 1, 1, 1);
@@ -944,6 +976,7 @@ public:
 
         lineEdit_A2 = new QLineEdit(groupBox_4);
         lineEdit_A2->setObjectName(QString::fromUtf8("lineEdit_A2"));
+        lineEdit_A2->setMinimumSize(QSize(0, 30));
         lineEdit_A2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         lineEdit_A2->setCursorPosition(0);
 
@@ -956,6 +989,7 @@ public:
 
         lineEdit_A3 = new QLineEdit(groupBox_4);
         lineEdit_A3->setObjectName(QString::fromUtf8("lineEdit_A3"));
+        lineEdit_A3->setMinimumSize(QSize(0, 30));
         lineEdit_A3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_A3, 3, 1, 1, 1);
@@ -967,6 +1001,7 @@ public:
 
         lineEdit_A4 = new QLineEdit(groupBox_4);
         lineEdit_A4->setObjectName(QString::fromUtf8("lineEdit_A4"));
+        lineEdit_A4->setMinimumSize(QSize(0, 30));
         lineEdit_A4->setCursor(QCursor(Qt::IBeamCursor));
         lineEdit_A4->setLayoutDirection(Qt::LeftToRight);
         lineEdit_A4->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
@@ -981,6 +1016,7 @@ public:
 
         lineEdit_A5 = new QLineEdit(groupBox_4);
         lineEdit_A5->setObjectName(QString::fromUtf8("lineEdit_A5"));
+        lineEdit_A5->setMinimumSize(QSize(0, 30));
         lineEdit_A5->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_A5, 4, 1, 1, 1);
@@ -992,6 +1028,7 @@ public:
 
         lineEdit_A6 = new QLineEdit(groupBox_4);
         lineEdit_A6->setObjectName(QString::fromUtf8("lineEdit_A6"));
+        lineEdit_A6->setMinimumSize(QSize(0, 30));
         lineEdit_A6->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_A6, 4, 3, 1, 1);
@@ -1003,6 +1040,7 @@ public:
 
         lineEdit_A7 = new QLineEdit(groupBox_4);
         lineEdit_A7->setObjectName(QString::fromUtf8("lineEdit_A7"));
+        lineEdit_A7->setMinimumSize(QSize(0, 30));
         lineEdit_A7->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_A7, 5, 1, 1, 1);
@@ -1014,6 +1052,7 @@ public:
 
         lineEdit_A8 = new QLineEdit(groupBox_4);
         lineEdit_A8->setObjectName(QString::fromUtf8("lineEdit_A8"));
+        lineEdit_A8->setMinimumSize(QSize(0, 30));
         lineEdit_A8->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_A8, 5, 3, 1, 1);
@@ -1025,6 +1064,7 @@ public:
 
         lineEdit_A9 = new QLineEdit(groupBox_4);
         lineEdit_A9->setObjectName(QString::fromUtf8("lineEdit_A9"));
+        lineEdit_A9->setMinimumSize(QSize(0, 30));
         lineEdit_A9->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_A9, 6, 1, 1, 1);
@@ -1036,6 +1076,7 @@ public:
 
         lineEdit_A10 = new QLineEdit(groupBox_4);
         lineEdit_A10->setObjectName(QString::fromUtf8("lineEdit_A10"));
+        lineEdit_A10->setMinimumSize(QSize(0, 30));
         lineEdit_A10->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_A10, 6, 3, 1, 1);
@@ -1047,6 +1088,7 @@ public:
 
         lineEdit_A11 = new QLineEdit(groupBox_4);
         lineEdit_A11->setObjectName(QString::fromUtf8("lineEdit_A11"));
+        lineEdit_A11->setMinimumSize(QSize(0, 30));
         lineEdit_A11->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_A11, 7, 1, 1, 1);
@@ -1058,6 +1100,7 @@ public:
 
         lineEdit_A12 = new QLineEdit(groupBox_4);
         lineEdit_A12->setObjectName(QString::fromUtf8("lineEdit_A12"));
+        lineEdit_A12->setMinimumSize(QSize(0, 30));
         lineEdit_A12->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_A12, 7, 3, 1, 1);
@@ -1069,6 +1112,7 @@ public:
 
         lineEdit_A13 = new QLineEdit(groupBox_4);
         lineEdit_A13->setObjectName(QString::fromUtf8("lineEdit_A13"));
+        lineEdit_A13->setMinimumSize(QSize(0, 30));
         lineEdit_A13->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_A13, 8, 1, 1, 1);
@@ -1080,6 +1124,7 @@ public:
 
         lineEdit_A14 = new QLineEdit(groupBox_4);
         lineEdit_A14->setObjectName(QString::fromUtf8("lineEdit_A14"));
+        lineEdit_A14->setMinimumSize(QSize(0, 30));
         lineEdit_A14->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_A14, 8, 3, 1, 1);
@@ -1091,6 +1136,7 @@ public:
 
         lineEdit_A15 = new QLineEdit(groupBox_4);
         lineEdit_A15->setObjectName(QString::fromUtf8("lineEdit_A15"));
+        lineEdit_A15->setMinimumSize(QSize(0, 30));
         lineEdit_A15->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_A15, 9, 1, 1, 1);
@@ -1102,6 +1148,7 @@ public:
 
         lineEdit_A16 = new QLineEdit(groupBox_4);
         lineEdit_A16->setObjectName(QString::fromUtf8("lineEdit_A16"));
+        lineEdit_A16->setMinimumSize(QSize(0, 30));
         lineEdit_A16->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_A16, 9, 3, 1, 1);
@@ -1113,6 +1160,7 @@ public:
 
         lineEdit_A17 = new QLineEdit(groupBox_4);
         lineEdit_A17->setObjectName(QString::fromUtf8("lineEdit_A17"));
+        lineEdit_A17->setMinimumSize(QSize(0, 30));
         lineEdit_A17->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_A17, 10, 1, 1, 1);
@@ -1124,6 +1172,7 @@ public:
 
         lineEdit_A18 = new QLineEdit(groupBox_4);
         lineEdit_A18->setObjectName(QString::fromUtf8("lineEdit_A18"));
+        lineEdit_A18->setMinimumSize(QSize(0, 30));
         lineEdit_A18->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_A18, 10, 3, 1, 1);
@@ -1135,6 +1184,7 @@ public:
 
         lineEdit_A19 = new QLineEdit(groupBox_4);
         lineEdit_A19->setObjectName(QString::fromUtf8("lineEdit_A19"));
+        lineEdit_A19->setMinimumSize(QSize(0, 30));
         lineEdit_A19->setAutoFillBackground(false);
         lineEdit_A19->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
@@ -1147,6 +1197,7 @@ public:
 
         lineEdit_A20 = new QLineEdit(groupBox_4);
         lineEdit_A20->setObjectName(QString::fromUtf8("lineEdit_A20"));
+        lineEdit_A20->setMinimumSize(QSize(0, 30));
         lineEdit_A20->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_5->addWidget(lineEdit_A20, 11, 3, 1, 1);
@@ -1159,10 +1210,10 @@ public:
 
         label_13 = new QLabel(page_3);
         label_13->setObjectName(QString::fromUtf8("label_13"));
-        QFont font4;
-        font4.setFamily(QString::fromUtf8("3ds"));
-        font4.setPointSize(16);
-        label_13->setFont(font4);
+        QFont font6;
+        font6.setFamily(QString::fromUtf8("3ds"));
+        font6.setPointSize(16);
+        label_13->setFont(font6);
         label_13->setLayoutDirection(Qt::LeftToRight);
         label_13->setAutoFillBackground(false);
         label_13->setAlignment(Qt::AlignCenter);
@@ -1174,7 +1225,7 @@ public:
         gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
         label_5 = new QLabel(page_3);
         label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setFont(font3);
+        label_5->setFont(font4);
         label_5->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);"));
 
         gridLayout_4->addWidget(label_5, 0, 0, 1, 1);
@@ -1192,7 +1243,7 @@ public:
 
         label_14 = new QLabel(page_3);
         label_14->setObjectName(QString::fromUtf8("label_14"));
-        label_14->setFont(font4);
+        label_14->setFont(font6);
         label_14->setAlignment(Qt::AlignCenter);
 
         gridLayout_26->addWidget(label_14, 5, 0, 1, 1);
@@ -1220,12 +1271,9 @@ public:
         gridLayout_15 = new QGridLayout();
         gridLayout_15->setSpacing(6);
         gridLayout_15->setObjectName(QString::fromUtf8("gridLayout_15"));
-        verticalSpacer = new QSpacerItem(20, 100, QSizePolicy::Minimum, QSizePolicy::Fixed);
-
-        gridLayout_15->addItem(verticalSpacer, 1, 0, 1, 1);
-
         groupBox_6 = new QGroupBox(page_4);
         groupBox_6->setObjectName(QString::fromUtf8("groupBox_6"));
+        groupBox_6->setFont(font5);
         horizontalLayout_22 = new QHBoxLayout(groupBox_6);
         horizontalLayout_22->setSpacing(6);
         horizontalLayout_22->setContentsMargins(11, 11, 11, 11);
@@ -1235,6 +1283,7 @@ public:
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         radioButton_constantFeed = new QRadioButton(groupBox_6);
         radioButton_constantFeed->setObjectName(QString::fromUtf8("radioButton_constantFeed"));
+        radioButton_constantFeed->setFont(font5);
 
         verticalLayout_2->addWidget(radioButton_constantFeed);
 
@@ -1243,17 +1292,20 @@ public:
         horizontalLayout_14->setObjectName(QString::fromUtf8("horizontalLayout_14"));
         label_42 = new QLabel(groupBox_6);
         label_42->setObjectName(QString::fromUtf8("label_42"));
+        label_42->setFont(font5);
 
         horizontalLayout_14->addWidget(label_42);
 
         lineEdit_constfeed = new QLineEdit(groupBox_6);
         lineEdit_constfeed->setObjectName(QString::fromUtf8("lineEdit_constfeed"));
+        lineEdit_constfeed->setMinimumSize(QSize(0, 30));
         lineEdit_constfeed->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         horizontalLayout_14->addWidget(lineEdit_constfeed);
 
         label_44 = new QLabel(groupBox_6);
         label_44->setObjectName(QString::fromUtf8("label_44"));
+        label_44->setFont(font5);
 
         horizontalLayout_14->addWidget(label_44);
 
@@ -1262,6 +1314,7 @@ public:
 
         radioButton_ChangedFeed = new QRadioButton(groupBox_6);
         radioButton_ChangedFeed->setObjectName(QString::fromUtf8("radioButton_ChangedFeed"));
+        radioButton_ChangedFeed->setFont(font5);
 
         verticalLayout_2->addWidget(radioButton_ChangedFeed);
 
@@ -1270,17 +1323,20 @@ public:
         horizontalLayout_13->setObjectName(QString::fromUtf8("horizontalLayout_13"));
         label_43 = new QLabel(groupBox_6);
         label_43->setObjectName(QString::fromUtf8("label_43"));
+        label_43->setFont(font5);
 
         horizontalLayout_13->addWidget(label_43);
 
         lineEdit_feedrate = new QLineEdit(groupBox_6);
         lineEdit_feedrate->setObjectName(QString::fromUtf8("lineEdit_feedrate"));
+        lineEdit_feedrate->setMinimumSize(QSize(0, 30));
         lineEdit_feedrate->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         horizontalLayout_13->addWidget(lineEdit_feedrate);
 
         label_45 = new QLabel(groupBox_6);
         label_45->setObjectName(QString::fromUtf8("label_45"));
+        label_45->setFont(font5);
 
         horizontalLayout_13->addWidget(label_45);
 
@@ -1304,33 +1360,39 @@ public:
         gridLayout_6->setObjectName(QString::fromUtf8("gridLayout_6"));
         label_52 = new QLabel(groupBox_8);
         label_52->setObjectName(QString::fromUtf8("label_52"));
+        label_52->setFont(font5);
 
         gridLayout_6->addWidget(label_52, 0, 0, 1, 1);
 
         lineEdit_ProdessLeft = new QLineEdit(groupBox_8);
         lineEdit_ProdessLeft->setObjectName(QString::fromUtf8("lineEdit_ProdessLeft"));
+        lineEdit_ProdessLeft->setMinimumSize(QSize(0, 30));
         lineEdit_ProdessLeft->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_6->addWidget(lineEdit_ProdessLeft, 0, 1, 1, 1);
 
         label_113 = new QLabel(groupBox_8);
         label_113->setObjectName(QString::fromUtf8("label_113"));
+        label_113->setFont(font5);
 
         gridLayout_6->addWidget(label_113, 0, 2, 1, 1);
 
         lineEdit_ProcessRight = new QLineEdit(groupBox_8);
         lineEdit_ProcessRight->setObjectName(QString::fromUtf8("lineEdit_ProcessRight"));
+        lineEdit_ProcessRight->setMinimumSize(QSize(0, 30));
         lineEdit_ProcessRight->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_6->addWidget(lineEdit_ProcessRight, 0, 3, 1, 1);
 
         label_56 = new QLabel(groupBox_8);
         label_56->setObjectName(QString::fromUtf8("label_56"));
+        label_56->setFont(font5);
 
         gridLayout_6->addWidget(label_56, 0, 4, 1, 1);
 
         label_53 = new QLabel(groupBox_8);
         label_53->setObjectName(QString::fromUtf8("label_53"));
+        label_53->setFont(font5);
 
         gridLayout_6->addWidget(label_53, 1, 0, 1, 1);
 
@@ -1341,17 +1403,20 @@ public:
         sizePolicy2.setVerticalStretch(0);
         sizePolicy2.setHeightForWidth(lineEdit_Pressure->sizePolicy().hasHeightForWidth());
         lineEdit_Pressure->setSizePolicy(sizePolicy2);
+        lineEdit_Pressure->setMinimumSize(QSize(0, 30));
         lineEdit_Pressure->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_6->addWidget(lineEdit_Pressure, 1, 1, 1, 3);
 
         label_57 = new QLabel(groupBox_8);
         label_57->setObjectName(QString::fromUtf8("label_57"));
+        label_57->setFont(font5);
 
         gridLayout_6->addWidget(label_57, 1, 4, 1, 1);
 
         label_55 = new QLabel(groupBox_8);
         label_55->setObjectName(QString::fromUtf8("label_55"));
+        label_55->setFont(font5);
 
         gridLayout_6->addWidget(label_55, 2, 0, 1, 1);
 
@@ -1359,17 +1424,20 @@ public:
         lineEdit_ProcessCycle->setObjectName(QString::fromUtf8("lineEdit_ProcessCycle"));
         sizePolicy2.setHeightForWidth(lineEdit_ProcessCycle->sizePolicy().hasHeightForWidth());
         lineEdit_ProcessCycle->setSizePolicy(sizePolicy2);
+        lineEdit_ProcessCycle->setMinimumSize(QSize(0, 30));
         lineEdit_ProcessCycle->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_6->addWidget(lineEdit_ProcessCycle, 2, 1, 1, 3);
 
         label_58 = new QLabel(groupBox_8);
         label_58->setObjectName(QString::fromUtf8("label_58"));
+        label_58->setFont(font5);
 
         gridLayout_6->addWidget(label_58, 2, 4, 1, 1);
 
         label_133 = new QLabel(groupBox_8);
         label_133->setObjectName(QString::fromUtf8("label_133"));
+        label_133->setFont(font5);
 
         gridLayout_6->addWidget(label_133, 3, 0, 1, 1);
 
@@ -1377,17 +1445,20 @@ public:
         lineEdit_ToolD->setObjectName(QString::fromUtf8("lineEdit_ToolD"));
         sizePolicy2.setHeightForWidth(lineEdit_ToolD->sizePolicy().hasHeightForWidth());
         lineEdit_ToolD->setSizePolicy(sizePolicy2);
+        lineEdit_ToolD->setMinimumSize(QSize(0, 30));
         lineEdit_ToolD->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_6->addWidget(lineEdit_ToolD, 3, 1, 1, 3);
 
         label_116 = new QLabel(groupBox_8);
         label_116->setObjectName(QString::fromUtf8("label_116"));
+        label_116->setFont(font5);
 
         gridLayout_6->addWidget(label_116, 3, 4, 1, 1);
 
         label_136 = new QLabel(groupBox_8);
         label_136->setObjectName(QString::fromUtf8("label_136"));
+        label_136->setFont(font5);
 
         gridLayout_6->addWidget(label_136, 4, 0, 1, 1);
 
@@ -1395,17 +1466,20 @@ public:
         lineEdit_ClothThick->setObjectName(QString::fromUtf8("lineEdit_ClothThick"));
         sizePolicy2.setHeightForWidth(lineEdit_ClothThick->sizePolicy().hasHeightForWidth());
         lineEdit_ClothThick->setSizePolicy(sizePolicy2);
+        lineEdit_ClothThick->setMinimumSize(QSize(0, 30));
         lineEdit_ClothThick->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_6->addWidget(lineEdit_ClothThick, 4, 1, 1, 3);
 
         label_130 = new QLabel(groupBox_8);
         label_130->setObjectName(QString::fromUtf8("label_130"));
+        label_130->setFont(font5);
 
         gridLayout_6->addWidget(label_130, 4, 4, 1, 1);
 
         label_141 = new QLabel(groupBox_8);
         label_141->setObjectName(QString::fromUtf8("label_141"));
+        label_141->setFont(font5);
 
         gridLayout_6->addWidget(label_141, 5, 0, 1, 1);
 
@@ -1413,12 +1487,14 @@ public:
         lineEdit_Toolhigh->setObjectName(QString::fromUtf8("lineEdit_Toolhigh"));
         sizePolicy2.setHeightForWidth(lineEdit_Toolhigh->sizePolicy().hasHeightForWidth());
         lineEdit_Toolhigh->setSizePolicy(sizePolicy2);
+        lineEdit_Toolhigh->setMinimumSize(QSize(0, 30));
         lineEdit_Toolhigh->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_6->addWidget(lineEdit_Toolhigh, 5, 1, 1, 3);
 
         label_134 = new QLabel(groupBox_8);
         label_134->setObjectName(QString::fromUtf8("label_134"));
+        label_134->setFont(font5);
 
         gridLayout_6->addWidget(label_134, 5, 4, 1, 1);
 
@@ -1427,55 +1503,6 @@ public:
 
 
         gridLayout_15->addWidget(groupBox_8, 2, 1, 1, 1);
-
-        groupBox_5 = new QGroupBox(page_4);
-        groupBox_5->setObjectName(QString::fromUtf8("groupBox_5"));
-        horizontalLayout_23 = new QHBoxLayout(groupBox_5);
-        horizontalLayout_23->setSpacing(6);
-        horizontalLayout_23->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_23->setObjectName(QString::fromUtf8("horizontalLayout_23"));
-        gridLayout_9 = new QGridLayout();
-        gridLayout_9->setSpacing(6);
-        gridLayout_9->setObjectName(QString::fromUtf8("gridLayout_9"));
-        label_3 = new QLabel(groupBox_5);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-
-        gridLayout_9->addWidget(label_3, 0, 0, 1, 1);
-
-        lineEdit_constCSpeed = new QLineEdit(groupBox_5);
-        lineEdit_constCSpeed->setObjectName(QString::fromUtf8("lineEdit_constCSpeed"));
-        lineEdit_constCSpeed->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
-
-        gridLayout_9->addWidget(lineEdit_constCSpeed, 0, 1, 1, 1);
-
-        label_40 = new QLabel(groupBox_5);
-        label_40->setObjectName(QString::fromUtf8("label_40"));
-
-        gridLayout_9->addWidget(label_40, 0, 2, 1, 1);
-
-        label_54 = new QLabel(groupBox_5);
-        label_54->setObjectName(QString::fromUtf8("label_54"));
-
-        gridLayout_9->addWidget(label_54, 1, 0, 1, 1);
-
-        lineEdit_Toolspeed = new QLineEdit(groupBox_5);
-        lineEdit_Toolspeed->setObjectName(QString::fromUtf8("lineEdit_Toolspeed"));
-        sizePolicy2.setHeightForWidth(lineEdit_Toolspeed->sizePolicy().hasHeightForWidth());
-        lineEdit_Toolspeed->setSizePolicy(sizePolicy2);
-        lineEdit_Toolspeed->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
-
-        gridLayout_9->addWidget(lineEdit_Toolspeed, 1, 1, 1, 1);
-
-        label_41 = new QLabel(groupBox_5);
-        label_41->setObjectName(QString::fromUtf8("label_41"));
-
-        gridLayout_9->addWidget(label_41, 1, 2, 1, 1);
-
-
-        horizontalLayout_23->addLayout(gridLayout_9);
-
-
-        gridLayout_15->addWidget(groupBox_5, 0, 0, 1, 1);
 
         groupBox_7 = new QGroupBox(page_4);
         groupBox_7->setObjectName(QString::fromUtf8("groupBox_7"));
@@ -1488,11 +1515,13 @@ public:
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         label_47 = new QLabel(groupBox_7);
         label_47->setObjectName(QString::fromUtf8("label_47"));
+        label_47->setFont(font5);
 
         gridLayout->addWidget(label_47, 1, 0, 1, 1);
 
         label_49 = new QLabel(groupBox_7);
         label_49->setObjectName(QString::fromUtf8("label_49"));
+        label_49->setFont(font5);
 
         gridLayout->addWidget(label_49, 1, 3, 1, 1);
 
@@ -1500,6 +1529,8 @@ public:
         comboBox_dataDistance->addItem(QString());
         comboBox_dataDistance->addItem(QString());
         comboBox_dataDistance->setObjectName(QString::fromUtf8("comboBox_dataDistance"));
+        comboBox_dataDistance->setMinimumSize(QSize(0, 30));
+        comboBox_dataDistance->setFont(font5);
         comboBox_dataDistance->setStyleSheet(QString::fromUtf8("/*\346\214\211\351\222\256\346\231\256\351\200\232\346\200\201*/\n"
 "QComboBox{\n"
 "         border-style: outset;\n"
@@ -1514,16 +1545,19 @@ public:
 
         label_48 = new QLabel(groupBox_7);
         label_48->setObjectName(QString::fromUtf8("label_48"));
+        label_48->setFont(font5);
 
         gridLayout->addWidget(label_48, 0, 3, 1, 1);
 
         label_46 = new QLabel(groupBox_7);
         label_46->setObjectName(QString::fromUtf8("label_46"));
+        label_46->setFont(font5);
 
         gridLayout->addWidget(label_46, 0, 0, 1, 1);
 
         label_50 = new QLabel(groupBox_7);
         label_50->setObjectName(QString::fromUtf8("label_50"));
+        label_50->setFont(font5);
 
         gridLayout->addWidget(label_50, 2, 0, 1, 1);
 
@@ -1531,6 +1565,8 @@ public:
         comboBox_ToolDirect->addItem(QString());
         comboBox_ToolDirect->addItem(QString());
         comboBox_ToolDirect->setObjectName(QString::fromUtf8("comboBox_ToolDirect"));
+        comboBox_ToolDirect->setMinimumSize(QSize(0, 30));
+        comboBox_ToolDirect->setFont(font5);
         comboBox_ToolDirect->setStyleSheet(QString::fromUtf8("/*\346\214\211\351\222\256\346\231\256\351\200\232\346\200\201*/\n"
 "QComboBox{\n"
 "         border-style: outset;\n"
@@ -1546,6 +1582,8 @@ public:
         comboBox_Cdirect->addItem(QString());
         comboBox_Cdirect->addItem(QString());
         comboBox_Cdirect->setObjectName(QString::fromUtf8("comboBox_Cdirect"));
+        comboBox_Cdirect->setMinimumSize(QSize(0, 30));
+        comboBox_Cdirect->setFont(font5);
         comboBox_Cdirect->setStyleSheet(QString::fromUtf8("/*\346\214\211\351\222\256\346\231\256\351\200\232\346\200\201*/\n"
 "QComboBox{\n"
 "         border-style: outset;\n"
@@ -1559,6 +1597,7 @@ public:
 
         label_51 = new QLabel(groupBox_7);
         label_51->setObjectName(QString::fromUtf8("label_51"));
+        label_51->setFont(font5);
 
         gridLayout->addWidget(label_51, 3, 0, 1, 1);
 
@@ -1566,6 +1605,8 @@ public:
         comboBox_toolRaidus->addItem(QString());
         comboBox_toolRaidus->addItem(QString());
         comboBox_toolRaidus->setObjectName(QString::fromUtf8("comboBox_toolRaidus"));
+        comboBox_toolRaidus->setMinimumSize(QSize(0, 30));
+        comboBox_toolRaidus->setFont(font5);
         comboBox_toolRaidus->setStyleSheet(QString::fromUtf8("/*\346\214\211\351\222\256\346\231\256\351\200\232\346\200\201*/\n"
 "QComboBox{\n"
 "         border-style: outset;\n"
@@ -1583,6 +1624,74 @@ public:
 
         gridLayout_15->addWidget(groupBox_7, 2, 0, 1, 1);
 
+        verticalSpacer = new QSpacerItem(20, 100, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        gridLayout_15->addItem(verticalSpacer, 1, 0, 1, 1);
+
+        groupBox_5 = new QGroupBox(page_4);
+        groupBox_5->setObjectName(QString::fromUtf8("groupBox_5"));
+        groupBox_5->setFont(font5);
+        horizontalLayout_23 = new QHBoxLayout(groupBox_5);
+        horizontalLayout_23->setSpacing(6);
+        horizontalLayout_23->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_23->setObjectName(QString::fromUtf8("horizontalLayout_23"));
+        gridLayout_9 = new QGridLayout();
+        gridLayout_9->setSpacing(6);
+        gridLayout_9->setObjectName(QString::fromUtf8("gridLayout_9"));
+        label_3 = new QLabel(groupBox_5);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setFont(font5);
+
+        gridLayout_9->addWidget(label_3, 0, 0, 1, 1);
+
+        lineEdit_constCSpeed = new QLineEdit(groupBox_5);
+        lineEdit_constCSpeed->setObjectName(QString::fromUtf8("lineEdit_constCSpeed"));
+        lineEdit_constCSpeed->setMinimumSize(QSize(0, 30));
+        lineEdit_constCSpeed->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+
+        gridLayout_9->addWidget(lineEdit_constCSpeed, 0, 1, 1, 1);
+
+        label_40 = new QLabel(groupBox_5);
+        label_40->setObjectName(QString::fromUtf8("label_40"));
+        label_40->setFont(font5);
+
+        gridLayout_9->addWidget(label_40, 0, 2, 1, 1);
+
+        label_54 = new QLabel(groupBox_5);
+        label_54->setObjectName(QString::fromUtf8("label_54"));
+        label_54->setFont(font5);
+
+        gridLayout_9->addWidget(label_54, 1, 0, 1, 1);
+
+        lineEdit_Toolspeed = new QLineEdit(groupBox_5);
+        lineEdit_Toolspeed->setObjectName(QString::fromUtf8("lineEdit_Toolspeed"));
+        sizePolicy2.setHeightForWidth(lineEdit_Toolspeed->sizePolicy().hasHeightForWidth());
+        lineEdit_Toolspeed->setSizePolicy(sizePolicy2);
+        lineEdit_Toolspeed->setMinimumSize(QSize(0, 30));
+        lineEdit_Toolspeed->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+
+        gridLayout_9->addWidget(lineEdit_Toolspeed, 1, 1, 1, 1);
+
+        label_41 = new QLabel(groupBox_5);
+        label_41->setObjectName(QString::fromUtf8("label_41"));
+        label_41->setFont(font5);
+
+        gridLayout_9->addWidget(label_41, 1, 2, 1, 1);
+
+
+        horizontalLayout_23->addLayout(gridLayout_9);
+
+
+        gridLayout_15->addWidget(groupBox_5, 0, 0, 1, 1);
+
+        groupBox_17 = new QGroupBox(page_4);
+        groupBox_17->setObjectName(QString::fromUtf8("groupBox_17"));
+        label_84 = new QLabel(groupBox_17);
+        label_84->setObjectName(QString::fromUtf8("label_84"));
+        label_84->setGeometry(QRect(20, 30, 54, 12));
+
+        gridLayout_15->addWidget(groupBox_17, 1, 1, 1, 1);
+
 
         verticalLayout->addLayout(gridLayout_15);
 
@@ -1594,25 +1703,29 @@ public:
         gridLayout_24->setObjectName(QString::fromUtf8("gridLayout_24"));
         pushButton_13 = new QPushButton(groupBox_9);
         pushButton_13->setObjectName(QString::fromUtf8("pushButton_13"));
-        pushButton_13->setMinimumSize(QSize(0, 20));
+        pushButton_13->setMinimumSize(QSize(0, 30));
+        pushButton_13->setFont(font5);
 
         gridLayout_24->addWidget(pushButton_13, 0, 2, 1, 1);
 
         pushButton_12 = new QPushButton(groupBox_9);
         pushButton_12->setObjectName(QString::fromUtf8("pushButton_12"));
-        pushButton_12->setMinimumSize(QSize(0, 20));
+        pushButton_12->setMinimumSize(QSize(0, 30));
+        pushButton_12->setFont(font5);
 
         gridLayout_24->addWidget(pushButton_12, 0, 1, 1, 1);
 
         pushButton_14 = new QPushButton(groupBox_9);
         pushButton_14->setObjectName(QString::fromUtf8("pushButton_14"));
-        pushButton_14->setMinimumSize(QSize(0, 20));
+        pushButton_14->setMinimumSize(QSize(0, 30));
+        pushButton_14->setFont(font5);
 
         gridLayout_24->addWidget(pushButton_14, 0, 3, 1, 1);
 
         pushButton_44 = new QPushButton(groupBox_9);
         pushButton_44->setObjectName(QString::fromUtf8("pushButton_44"));
-        pushButton_44->setMinimumSize(QSize(0, 20));
+        pushButton_44->setMinimumSize(QSize(0, 30));
+        pushButton_44->setFont(font5);
 
         gridLayout_24->addWidget(pushButton_44, 0, 4, 1, 1);
 
@@ -1626,26 +1739,46 @@ public:
         stackedWidget_2->addWidget(page_4);
         page_5 = new QWidget();
         page_5->setObjectName(QString::fromUtf8("page_5"));
-        customPlot_2 = new QCustomPlot(page_5);
+        verticalLayoutWidget = new QWidget(page_5);
+        verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
+        verticalLayoutWidget->setGeometry(QRect(0, 9, 941, 661));
+        verticalLayout_10 = new QVBoxLayout(verticalLayoutWidget);
+        verticalLayout_10->setSpacing(6);
+        verticalLayout_10->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_10->setObjectName(QString::fromUtf8("verticalLayout_10"));
+        verticalLayout_10->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout_7 = new QHBoxLayout();
+        horizontalLayout_7->setSpacing(2);
+        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
+        label_60 = new QLabel(verticalLayoutWidget);
+        label_60->setObjectName(QString::fromUtf8("label_60"));
+        label_60->setFont(font6);
+
+        horizontalLayout_7->addWidget(label_60);
+
+        lineEdit_dataname = new QLineEdit(verticalLayoutWidget);
+        lineEdit_dataname->setObjectName(QString::fromUtf8("lineEdit_dataname"));
+        lineEdit_dataname->setMinimumSize(QSize(0, 40));
+        lineEdit_dataname->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+
+        horizontalLayout_7->addWidget(lineEdit_dataname);
+
+        pushButton_15 = new QPushButton(verticalLayoutWidget);
+        pushButton_15->setObjectName(QString::fromUtf8("pushButton_15"));
+        pushButton_15->setMinimumSize(QSize(100, 40));
+
+        horizontalLayout_7->addWidget(pushButton_15);
+
+
+        verticalLayout_10->addLayout(horizontalLayout_7);
+
+        customPlot_2 = new QCustomPlot(verticalLayoutWidget);
         customPlot_2->setObjectName(QString::fromUtf8("customPlot_2"));
-        customPlot_2->setGeometry(QRect(9, 224, 823, 400));
         customPlot_2->setMinimumSize(QSize(0, 400));
         customPlot_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
-        pushButton_50 = new QPushButton(page_5);
-        pushButton_50->setObjectName(QString::fromUtf8("pushButton_50"));
-        pushButton_50->setGeometry(QRect(30, 90, 201, 41));
-        label_60 = new QLabel(page_5);
-        label_60->setObjectName(QString::fromUtf8("label_60"));
-        label_60->setGeometry(QRect(10, 170, 147, 21));
-        label_60->setFont(font4);
-        lineEdit_dataname = new QLineEdit(page_5);
-        lineEdit_dataname->setObjectName(QString::fromUtf8("lineEdit_dataname"));
-        lineEdit_dataname->setGeometry(QRect(160, 170, 133, 20));
-        lineEdit_dataname->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
-        pushButton_15 = new QPushButton(page_5);
-        pushButton_15->setObjectName(QString::fromUtf8("pushButton_15"));
-        pushButton_15->setGeometry(QRect(330, 160, 91, 31));
-        pushButton_15->setMinimumSize(QSize(86, 20));
+
+        verticalLayout_10->addWidget(customPlot_2);
+
         stackedWidget_2->addWidget(page_5);
         page_8 = new QWidget();
         page_8->setObjectName(QString::fromUtf8("page_8"));
@@ -1655,17 +1788,20 @@ public:
         gridLayout_27->setObjectName(QString::fromUtf8("gridLayout_27"));
         textEdit = new QTextEdit(page_8);
         textEdit->setObjectName(QString::fromUtf8("textEdit"));
-        QFont font5;
-        font5.setFamily(QString::fromUtf8("3ds"));
-        font5.setPointSize(7);
-        textEdit->setFont(font5);
+        QFont font7;
+        font7.setFamily(QString::fromUtf8("3ds"));
+        font7.setPointSize(14);
+        textEdit->setFont(font7);
         textEdit->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_27->addWidget(textEdit, 0, 0, 1, 1);
 
         textEdit_2 = new QTextEdit(page_8);
         textEdit_2->setObjectName(QString::fromUtf8("textEdit_2"));
-        textEdit_2->setFont(font5);
+        QFont font8;
+        font8.setFamily(QString::fromUtf8("3ds"));
+        font8.setPointSize(15);
+        textEdit_2->setFont(font8);
         textEdit_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_27->addWidget(textEdit_2, 0, 1, 1, 1);
@@ -1675,7 +1811,8 @@ public:
         horizontalLayout_9->setObjectName(QString::fromUtf8("horizontalLayout_9"));
         pushButton_40 = new QPushButton(page_8);
         pushButton_40->setObjectName(QString::fromUtf8("pushButton_40"));
-        pushButton_40->setMinimumSize(QSize(0, 20));
+        pushButton_40->setMinimumSize(QSize(0, 30));
+        pushButton_40->setFont(font5);
         pushButton_40->setStyleSheet(QString::fromUtf8("/*\346\214\211\351\222\256\346\231\256\351\200\232\346\200\201*/\n"
 "QPushButton{\n"
 "         border-style: outset;\n"
@@ -1709,7 +1846,8 @@ public:
 
         pushButton_41 = new QPushButton(page_8);
         pushButton_41->setObjectName(QString::fromUtf8("pushButton_41"));
-        pushButton_41->setMinimumSize(QSize(0, 20));
+        pushButton_41->setMinimumSize(QSize(0, 30));
+        pushButton_41->setFont(font5);
 
         horizontalLayout_9->addWidget(pushButton_41);
 
@@ -1721,13 +1859,15 @@ public:
         horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
         pushButton_42 = new QPushButton(page_8);
         pushButton_42->setObjectName(QString::fromUtf8("pushButton_42"));
-        pushButton_42->setMinimumSize(QSize(0, 20));
+        pushButton_42->setMinimumSize(QSize(0, 30));
+        pushButton_42->setFont(font5);
 
         horizontalLayout_10->addWidget(pushButton_42);
 
         pushButton_43 = new QPushButton(page_8);
         pushButton_43->setObjectName(QString::fromUtf8("pushButton_43"));
-        pushButton_43->setMinimumSize(QSize(0, 20));
+        pushButton_43->setMinimumSize(QSize(0, 30));
+        pushButton_43->setFont(font5);
 
         horizontalLayout_10->addWidget(pushButton_43);
 
@@ -1739,11 +1879,13 @@ public:
         horizontalLayout_11->setObjectName(QString::fromUtf8("horizontalLayout_11"));
         label_115 = new QLabel(page_8);
         label_115->setObjectName(QString::fromUtf8("label_115"));
+        label_115->setFont(font5);
 
         horizontalLayout_11->addWidget(label_115);
 
         lineEdit_ProcessCycle_2 = new QLineEdit(page_8);
         lineEdit_ProcessCycle_2->setObjectName(QString::fromUtf8("lineEdit_ProcessCycle_2"));
+        lineEdit_ProcessCycle_2->setMinimumSize(QSize(0, 30));
         lineEdit_ProcessCycle_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         horizontalLayout_11->addWidget(lineEdit_ProcessCycle_2);
@@ -1756,11 +1898,13 @@ public:
         horizontalLayout_12->setObjectName(QString::fromUtf8("horizontalLayout_12"));
         label_117 = new QLabel(page_8);
         label_117->setObjectName(QString::fromUtf8("label_117"));
+        label_117->setFont(font5);
 
         horizontalLayout_12->addWidget(label_117);
 
         lineEdit_ProcessCycle_3 = new QLineEdit(page_8);
         lineEdit_ProcessCycle_3->setObjectName(QString::fromUtf8("lineEdit_ProcessCycle_3"));
+        lineEdit_ProcessCycle_3->setMinimumSize(QSize(0, 30));
         lineEdit_ProcessCycle_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         horizontalLayout_12->addWidget(lineEdit_ProcessCycle_3);
@@ -1775,20 +1919,59 @@ public:
         gridLayout_29->setSpacing(6);
         gridLayout_29->setContentsMargins(11, 11, 11, 11);
         gridLayout_29->setObjectName(QString::fromUtf8("gridLayout_29"));
+        groupBox_10 = new QGroupBox(page_6);
+        groupBox_10->setObjectName(QString::fromUtf8("groupBox_10"));
+        groupBox_10->setMinimumSize(QSize(240, 82));
+        groupBox_10->setMaximumSize(QSize(240, 82));
+        horizontalLayout_8 = new QHBoxLayout(groupBox_10);
+        horizontalLayout_8->setSpacing(6);
+        horizontalLayout_8->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
+        pushButton_16 = new QPushButton(groupBox_10);
+        pushButton_16->setObjectName(QString::fromUtf8("pushButton_16"));
+        pushButton_16->setMinimumSize(QSize(80, 50));
+        pushButton_16->setFont(font5);
+
+        horizontalLayout_8->addWidget(pushButton_16);
+
+        horizontalSpacer_12 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_8->addItem(horizontalSpacer_12);
+
+        pushButton_17 = new QPushButton(groupBox_10);
+        pushButton_17->setObjectName(QString::fromUtf8("pushButton_17"));
+        pushButton_17->setMinimumSize(QSize(80, 50));
+        pushButton_17->setFont(font5);
+
+        horizontalLayout_8->addWidget(pushButton_17);
+
+
+        gridLayout_29->addWidget(groupBox_10, 1, 1, 1, 1);
+
+        horizontalSpacer_5 = new QSpacerItem(297, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_29->addItem(horizontalSpacer_5, 1, 0, 1, 1);
+
+        horizontalSpacer_6 = new QSpacerItem(297, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_29->addItem(horizontalSpacer_6, 1, 2, 1, 1);
+
         verticalLayout_4 = new QVBoxLayout();
         verticalLayout_4->setSpacing(6);
         verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
         horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setSpacing(6);
+        horizontalLayout->setSpacing(1);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setSizeConstraint(QLayout::SetMinimumSize);
         label_4 = new QLabel(page_6);
         label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setFont(font4);
+        label_4->setFont(font6);
 
         horizontalLayout->addWidget(label_4);
 
         lineEdit_11 = new QLineEdit(page_6);
         lineEdit_11->setObjectName(QString::fromUtf8("lineEdit_11"));
+        lineEdit_11->setMinimumSize(QSize(0, 40));
         lineEdit_11->setStyleSheet(QString::fromUtf8(" background-color: rgb(255, 255, 255);"));
 
         horizontalLayout->addWidget(lineEdit_11);
@@ -1804,58 +1987,58 @@ public:
         gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
         label_62 = new QLabel(page_6);
         label_62->setObjectName(QString::fromUtf8("label_62"));
-        QFont font6;
-        font6.setFamily(QString::fromUtf8("Times New Roman"));
-        font6.setPointSize(10);
-        label_62->setFont(font6);
+        QFont font9;
+        font9.setFamily(QString::fromUtf8("Times New Roman"));
+        font9.setPointSize(12);
+        label_62->setFont(font9);
 
         gridLayout_7->addWidget(label_62, 1, 0, 1, 1);
 
         label_68 = new QLabel(page_6);
         label_68->setObjectName(QString::fromUtf8("label_68"));
-        label_68->setFont(font6);
+        label_68->setFont(font9);
 
         gridLayout_7->addWidget(label_68, 2, 2, 1, 1);
 
         label_70 = new QLabel(page_6);
         label_70->setObjectName(QString::fromUtf8("label_70"));
-        label_70->setFont(font6);
+        label_70->setFont(font9);
 
         gridLayout_7->addWidget(label_70, 4, 2, 1, 1);
 
         label_63 = new QLabel(page_6);
         label_63->setObjectName(QString::fromUtf8("label_63"));
-        label_63->setFont(font6);
+        label_63->setFont(font9);
 
         gridLayout_7->addWidget(label_63, 4, 0, 1, 1);
 
         label_65 = new QLabel(page_6);
         label_65->setObjectName(QString::fromUtf8("label_65"));
-        label_65->setFont(font6);
+        label_65->setFont(font9);
 
         gridLayout_7->addWidget(label_65, 3, 0, 1, 1);
 
         label_69 = new QLabel(page_6);
         label_69->setObjectName(QString::fromUtf8("label_69"));
-        label_69->setFont(font6);
+        label_69->setFont(font9);
 
         gridLayout_7->addWidget(label_69, 3, 2, 1, 1);
 
         label_64 = new QLabel(page_6);
         label_64->setObjectName(QString::fromUtf8("label_64"));
-        label_64->setFont(font6);
+        label_64->setFont(font9);
 
         gridLayout_7->addWidget(label_64, 2, 0, 1, 1);
 
         label_67 = new QLabel(page_6);
         label_67->setObjectName(QString::fromUtf8("label_67"));
-        label_67->setFont(font6);
+        label_67->setFont(font9);
 
         gridLayout_7->addWidget(label_67, 1, 2, 1, 1);
 
         lineEdit_15 = new QLineEdit(page_6);
         lineEdit_15->setObjectName(QString::fromUtf8("lineEdit_15"));
-        lineEdit_15->setMinimumSize(QSize(300, 0));
+        lineEdit_15->setMinimumSize(QSize(300, 35));
         lineEdit_15->setMaximumSize(QSize(300, 16777215));
         lineEdit_15->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
@@ -1863,7 +2046,7 @@ public:
 
         lineEdit_16 = new QLineEdit(page_6);
         lineEdit_16->setObjectName(QString::fromUtf8("lineEdit_16"));
-        lineEdit_16->setMinimumSize(QSize(300, 0));
+        lineEdit_16->setMinimumSize(QSize(300, 35));
         lineEdit_16->setMaximumSize(QSize(300, 16777215));
         lineEdit_16->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
@@ -1871,19 +2054,19 @@ public:
 
         label_66 = new QLabel(page_6);
         label_66->setObjectName(QString::fromUtf8("label_66"));
-        label_66->setFont(font6);
+        label_66->setFont(font9);
 
         gridLayout_7->addWidget(label_66, 5, 0, 1, 1);
 
         label_83 = new QLabel(page_6);
         label_83->setObjectName(QString::fromUtf8("label_83"));
-        label_83->setFont(font6);
+        label_83->setFont(font9);
 
         gridLayout_7->addWidget(label_83, 5, 2, 1, 1);
 
         lineEdit_13 = new QLineEdit(page_6);
         lineEdit_13->setObjectName(QString::fromUtf8("lineEdit_13"));
-        lineEdit_13->setMinimumSize(QSize(300, 0));
+        lineEdit_13->setMinimumSize(QSize(300, 35));
         lineEdit_13->setMaximumSize(QSize(300, 16777215));
         lineEdit_13->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
@@ -1891,7 +2074,7 @@ public:
 
         lineEdit_14 = new QLineEdit(page_6);
         lineEdit_14->setObjectName(QString::fromUtf8("lineEdit_14"));
-        lineEdit_14->setMinimumSize(QSize(300, 0));
+        lineEdit_14->setMinimumSize(QSize(300, 35));
         lineEdit_14->setMaximumSize(QSize(300, 16777215));
         lineEdit_14->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
@@ -1899,7 +2082,7 @@ public:
 
         lineEdit_12 = new QLineEdit(page_6);
         lineEdit_12->setObjectName(QString::fromUtf8("lineEdit_12"));
-        lineEdit_12->setMinimumSize(QSize(300, 0));
+        lineEdit_12->setMinimumSize(QSize(300, 35));
         lineEdit_12->setMaximumSize(QSize(300, 16777215));
         lineEdit_12->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
@@ -1909,10 +2092,10 @@ public:
         label_61->setObjectName(QString::fromUtf8("label_61"));
         label_61->setMinimumSize(QSize(342, 45));
         label_61->setMaximumSize(QSize(342, 45));
-        QFont font7;
-        font7.setFamily(QString::fromUtf8("\345\256\213\344\275\223"));
-        font7.setPointSize(16);
-        label_61->setFont(font7);
+        QFont font10;
+        font10.setFamily(QString::fromUtf8("\345\256\213\344\275\223"));
+        font10.setPointSize(16);
+        label_61->setFont(font10);
         label_61->setAlignment(Qt::AlignCenter);
 
         gridLayout_7->addWidget(label_61, 0, 1, 1, 1);
@@ -1929,7 +2112,7 @@ public:
         gridLayout_8->setObjectName(QString::fromUtf8("gridLayout_8"));
         lineEdit_18 = new QLineEdit(page_6);
         lineEdit_18->setObjectName(QString::fromUtf8("lineEdit_18"));
-        lineEdit_18->setMinimumSize(QSize(300, 0));
+        lineEdit_18->setMinimumSize(QSize(300, 35));
         lineEdit_18->setMaximumSize(QSize(300, 16777215));
         lineEdit_18->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
@@ -1937,13 +2120,13 @@ public:
 
         label_76 = new QLabel(page_6);
         label_76->setObjectName(QString::fromUtf8("label_76"));
-        label_76->setFont(font6);
+        label_76->setFont(font9);
 
         gridLayout_8->addWidget(label_76, 4, 0, 1, 1);
 
         lineEdit_19 = new QLineEdit(page_6);
         lineEdit_19->setObjectName(QString::fromUtf8("lineEdit_19"));
-        lineEdit_19->setMinimumSize(QSize(300, 0));
+        lineEdit_19->setMinimumSize(QSize(300, 35));
         lineEdit_19->setMaximumSize(QSize(300, 16777215));
         lineEdit_19->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
@@ -1951,7 +2134,7 @@ public:
 
         lineEdit_17 = new QLineEdit(page_6);
         lineEdit_17->setObjectName(QString::fromUtf8("lineEdit_17"));
-        lineEdit_17->setMinimumSize(QSize(300, 0));
+        lineEdit_17->setMinimumSize(QSize(300, 35));
         lineEdit_17->setMaximumSize(QSize(300, 16777215));
         lineEdit_17->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
@@ -1959,57 +2142,57 @@ public:
 
         label_72 = new QLabel(page_6);
         label_72->setObjectName(QString::fromUtf8("label_72"));
-        label_72->setFont(font6);
+        label_72->setFont(font9);
 
         gridLayout_8->addWidget(label_72, 3, 2, 1, 1);
 
         label_78 = new QLabel(page_6);
         label_78->setObjectName(QString::fromUtf8("label_78"));
-        label_78->setFont(font6);
+        label_78->setFont(font9);
 
         gridLayout_8->addWidget(label_78, 5, 0, 1, 1);
 
         label_77 = new QLabel(page_6);
         label_77->setObjectName(QString::fromUtf8("label_77"));
-        label_77->setFont(font6);
+        label_77->setFont(font9);
 
         gridLayout_8->addWidget(label_77, 1, 0, 1, 1);
 
         label_80 = new QLabel(page_6);
         label_80->setObjectName(QString::fromUtf8("label_80"));
         label_80->setMaximumSize(QSize(342, 45));
-        label_80->setFont(font7);
+        label_80->setFont(font10);
         label_80->setAlignment(Qt::AlignCenter);
 
         gridLayout_8->addWidget(label_80, 0, 1, 1, 1);
 
         label_79 = new QLabel(page_6);
         label_79->setObjectName(QString::fromUtf8("label_79"));
-        label_79->setFont(font6);
+        label_79->setFont(font9);
 
         gridLayout_8->addWidget(label_79, 2, 2, 1, 1);
 
         label_71 = new QLabel(page_6);
         label_71->setObjectName(QString::fromUtf8("label_71"));
-        label_71->setFont(font6);
+        label_71->setFont(font9);
 
         gridLayout_8->addWidget(label_71, 3, 0, 1, 1);
 
         label_75 = new QLabel(page_6);
         label_75->setObjectName(QString::fromUtf8("label_75"));
-        label_75->setFont(font6);
+        label_75->setFont(font9);
 
         gridLayout_8->addWidget(label_75, 1, 2, 1, 1);
 
         label_74 = new QLabel(page_6);
         label_74->setObjectName(QString::fromUtf8("label_74"));
-        label_74->setFont(font6);
+        label_74->setFont(font9);
 
         gridLayout_8->addWidget(label_74, 2, 0, 1, 1);
 
         lineEdit_20 = new QLineEdit(page_6);
         lineEdit_20->setObjectName(QString::fromUtf8("lineEdit_20"));
-        lineEdit_20->setMinimumSize(QSize(300, 0));
+        lineEdit_20->setMinimumSize(QSize(300, 35));
         lineEdit_20->setMaximumSize(QSize(300, 16777215));
         lineEdit_20->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
@@ -2017,7 +2200,7 @@ public:
 
         lineEdit_21 = new QLineEdit(page_6);
         lineEdit_21->setObjectName(QString::fromUtf8("lineEdit_21"));
-        lineEdit_21->setMinimumSize(QSize(300, 0));
+        lineEdit_21->setMinimumSize(QSize(300, 35));
         lineEdit_21->setMaximumSize(QSize(300, 16777215));
         lineEdit_21->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
@@ -2025,13 +2208,13 @@ public:
 
         label_73 = new QLabel(page_6);
         label_73->setObjectName(QString::fromUtf8("label_73"));
-        label_73->setFont(font6);
+        label_73->setFont(font9);
 
         gridLayout_8->addWidget(label_73, 4, 2, 1, 1);
 
         label_137 = new QLabel(page_6);
         label_137->setObjectName(QString::fromUtf8("label_137"));
-        label_137->setFont(font6);
+        label_137->setFont(font9);
 
         gridLayout_8->addWidget(label_137, 5, 2, 1, 1);
 
@@ -2046,12 +2229,13 @@ public:
         gridLayout_12->setObjectName(QString::fromUtf8("gridLayout_12"));
         label_140 = new QLabel(page_6);
         label_140->setObjectName(QString::fromUtf8("label_140"));
-        label_140->setFont(font3);
+        label_140->setFont(font4);
 
         gridLayout_12->addWidget(label_140, 1, 0, 1, 1);
 
         progressBar = new QProgressBar(page_6);
         progressBar->setObjectName(QString::fromUtf8("progressBar"));
+        progressBar->setMinimumSize(QSize(0, 35));
         progressBar->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "alternate-background-color: rgb(85, 170, 0);"));
         progressBar->setValue(0);
@@ -2060,19 +2244,20 @@ public:
 
         label_139 = new QLabel(page_6);
         label_139->setObjectName(QString::fromUtf8("label_139"));
-        label_139->setFont(font3);
+        label_139->setFont(font4);
 
         gridLayout_12->addWidget(label_139, 0, 4, 1, 1);
 
         lineEdit_23 = new QLineEdit(page_6);
         lineEdit_23->setObjectName(QString::fromUtf8("lineEdit_23"));
+        lineEdit_23->setMinimumSize(QSize(0, 35));
         lineEdit_23->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_12->addWidget(lineEdit_23, 0, 5, 1, 1);
 
         label_138 = new QLabel(page_6);
         label_138->setObjectName(QString::fromUtf8("label_138"));
-        label_138->setFont(font3);
+        label_138->setFont(font4);
 
         gridLayout_12->addWidget(label_138, 0, 0, 1, 1);
 
@@ -2082,13 +2267,14 @@ public:
 
         lineEdit_22 = new QLineEdit(page_6);
         lineEdit_22->setObjectName(QString::fromUtf8("lineEdit_22"));
+        lineEdit_22->setMinimumSize(QSize(0, 35));
         lineEdit_22->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_12->addWidget(lineEdit_22, 0, 1, 1, 1);
 
         label_82 = new QLabel(page_6);
         label_82->setObjectName(QString::fromUtf8("label_82"));
-        label_82->setFont(font3);
+        label_82->setFont(font4);
 
         gridLayout_12->addWidget(label_82, 0, 2, 1, 1);
 
@@ -2102,37 +2288,6 @@ public:
 
         gridLayout_29->addLayout(verticalLayout_4, 0, 0, 1, 3);
 
-        horizontalSpacer_5 = new QSpacerItem(297, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout_29->addItem(horizontalSpacer_5, 1, 0, 1, 1);
-
-        groupBox_10 = new QGroupBox(page_6);
-        groupBox_10->setObjectName(QString::fromUtf8("groupBox_10"));
-        groupBox_10->setMinimumSize(QSize(240, 82));
-        groupBox_10->setMaximumSize(QSize(240, 82));
-        horizontalLayout_8 = new QHBoxLayout(groupBox_10);
-        horizontalLayout_8->setSpacing(6);
-        horizontalLayout_8->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
-        pushButton_16 = new QPushButton(groupBox_10);
-        pushButton_16->setObjectName(QString::fromUtf8("pushButton_16"));
-        pushButton_16->setMinimumSize(QSize(80, 30));
-
-        horizontalLayout_8->addWidget(pushButton_16);
-
-        pushButton_17 = new QPushButton(groupBox_10);
-        pushButton_17->setObjectName(QString::fromUtf8("pushButton_17"));
-        pushButton_17->setMinimumSize(QSize(80, 30));
-
-        horizontalLayout_8->addWidget(pushButton_17);
-
-
-        gridLayout_29->addWidget(groupBox_10, 1, 1, 1, 1);
-
-        horizontalSpacer_6 = new QSpacerItem(297, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout_29->addItem(horizontalSpacer_6, 1, 2, 1, 1);
-
         stackedWidget_2->addWidget(page_6);
         page_7 = new QWidget();
         page_7->setObjectName(QString::fromUtf8("page_7"));
@@ -2140,7 +2295,7 @@ public:
         gridLayout_25->setSpacing(6);
         gridLayout_25->setContentsMargins(11, 11, 11, 11);
         gridLayout_25->setObjectName(QString::fromUtf8("gridLayout_25"));
-        horizontalSpacer_8 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        horizontalSpacer_8 = new QSpacerItem(50, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
 
         gridLayout_25->addItem(horizontalSpacer_8, 0, 1, 1, 1);
 
@@ -2153,25 +2308,25 @@ public:
         gridLayout_23->setObjectName(QString::fromUtf8("gridLayout_23"));
         pushButton_35 = new QPushButton(groupBox_14);
         pushButton_35->setObjectName(QString::fromUtf8("pushButton_35"));
-        pushButton_35->setMinimumSize(QSize(0, 20));
+        pushButton_35->setMinimumSize(QSize(0, 30));
 
         gridLayout_23->addWidget(pushButton_35, 0, 0, 1, 1);
 
         pushButton_36 = new QPushButton(groupBox_14);
         pushButton_36->setObjectName(QString::fromUtf8("pushButton_36"));
-        pushButton_36->setMinimumSize(QSize(80, 20));
+        pushButton_36->setMinimumSize(QSize(80, 30));
 
         gridLayout_23->addWidget(pushButton_36, 0, 1, 1, 1);
 
         pushButton_37 = new QPushButton(groupBox_14);
         pushButton_37->setObjectName(QString::fromUtf8("pushButton_37"));
-        pushButton_37->setMinimumSize(QSize(0, 20));
+        pushButton_37->setMinimumSize(QSize(0, 30));
 
         gridLayout_23->addWidget(pushButton_37, 0, 2, 1, 1);
 
         pushButton_38 = new QPushButton(groupBox_14);
         pushButton_38->setObjectName(QString::fromUtf8("pushButton_38"));
-        pushButton_38->setMinimumSize(QSize(0, 20));
+        pushButton_38->setMinimumSize(QSize(0, 30));
 
         gridLayout_23->addWidget(pushButton_38, 0, 3, 1, 1);
 
@@ -2181,6 +2336,7 @@ public:
         groupBox_11 = new QGroupBox(page_7);
         groupBox_11->setObjectName(QString::fromUtf8("groupBox_11"));
         groupBox_11->setMinimumSize(QSize(0, 200));
+        groupBox_11->setFont(font3);
         groupBox_11->setFlat(false);
         horizontalLayout_16 = new QHBoxLayout(groupBox_11);
         horizontalLayout_16->setSpacing(6);
@@ -2191,31 +2347,31 @@ public:
         verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         label_92 = new QLabel(groupBox_11);
         label_92->setObjectName(QString::fromUtf8("label_92"));
-        label_92->setFont(font6);
+        label_92->setFont(font9);
 
         verticalLayout_3->addWidget(label_92);
 
         label_99 = new QLabel(groupBox_11);
         label_99->setObjectName(QString::fromUtf8("label_99"));
-        label_99->setFont(font6);
+        label_99->setFont(font9);
 
         verticalLayout_3->addWidget(label_99);
 
         label_104 = new QLabel(groupBox_11);
         label_104->setObjectName(QString::fromUtf8("label_104"));
-        label_104->setFont(font6);
+        label_104->setFont(font9);
 
         verticalLayout_3->addWidget(label_104);
 
         label_85 = new QLabel(groupBox_11);
         label_85->setObjectName(QString::fromUtf8("label_85"));
-        label_85->setFont(font6);
+        label_85->setFont(font9);
 
         verticalLayout_3->addWidget(label_85);
 
         label_89 = new QLabel(groupBox_11);
         label_89->setObjectName(QString::fromUtf8("label_89"));
-        label_89->setFont(font6);
+        label_89->setFont(font9);
 
         verticalLayout_3->addWidget(label_89);
 
@@ -2227,30 +2383,35 @@ public:
         verticalLayout_7->setObjectName(QString::fromUtf8("verticalLayout_7"));
         lineEdit_33 = new QLineEdit(groupBox_11);
         lineEdit_33->setObjectName(QString::fromUtf8("lineEdit_33"));
+        lineEdit_33->setMinimumSize(QSize(0, 30));
         lineEdit_33->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         verticalLayout_7->addWidget(lineEdit_33);
 
         lineEdit_25 = new QLineEdit(groupBox_11);
         lineEdit_25->setObjectName(QString::fromUtf8("lineEdit_25"));
+        lineEdit_25->setMinimumSize(QSize(0, 30));
         lineEdit_25->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         verticalLayout_7->addWidget(lineEdit_25);
 
         lineEdit_31 = new QLineEdit(groupBox_11);
         lineEdit_31->setObjectName(QString::fromUtf8("lineEdit_31"));
+        lineEdit_31->setMinimumSize(QSize(0, 30));
         lineEdit_31->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         verticalLayout_7->addWidget(lineEdit_31);
 
         lineEdit_28 = new QLineEdit(groupBox_11);
         lineEdit_28->setObjectName(QString::fromUtf8("lineEdit_28"));
+        lineEdit_28->setMinimumSize(QSize(0, 30));
         lineEdit_28->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         verticalLayout_7->addWidget(lineEdit_28);
 
         lineEdit_27 = new QLineEdit(groupBox_11);
         lineEdit_27->setObjectName(QString::fromUtf8("lineEdit_27"));
+        lineEdit_27->setMinimumSize(QSize(0, 30));
         lineEdit_27->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         verticalLayout_7->addWidget(lineEdit_27);
@@ -2263,31 +2424,31 @@ public:
         verticalLayout_8->setObjectName(QString::fromUtf8("verticalLayout_8"));
         label_86 = new QLabel(groupBox_11);
         label_86->setObjectName(QString::fromUtf8("label_86"));
-        label_86->setFont(font6);
+        label_86->setFont(font9);
 
         verticalLayout_8->addWidget(label_86);
 
         label_102 = new QLabel(groupBox_11);
         label_102->setObjectName(QString::fromUtf8("label_102"));
-        label_102->setFont(font6);
+        label_102->setFont(font9);
 
         verticalLayout_8->addWidget(label_102);
 
         label_90 = new QLabel(groupBox_11);
         label_90->setObjectName(QString::fromUtf8("label_90"));
-        label_90->setFont(font6);
+        label_90->setFont(font9);
 
         verticalLayout_8->addWidget(label_90);
 
         label_118 = new QLabel(groupBox_11);
         label_118->setObjectName(QString::fromUtf8("label_118"));
-        label_118->setFont(font6);
+        label_118->setFont(font9);
 
         verticalLayout_8->addWidget(label_118);
 
         label_91 = new QLabel(groupBox_11);
         label_91->setObjectName(QString::fromUtf8("label_91"));
-        label_91->setFont(font6);
+        label_91->setFont(font9);
 
         verticalLayout_8->addWidget(label_91);
 
@@ -2312,31 +2473,31 @@ public:
         verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
         label_93 = new QLabel(groupBox_12);
         label_93->setObjectName(QString::fromUtf8("label_93"));
-        label_93->setFont(font6);
+        label_93->setFont(font9);
 
         verticalLayout_5->addWidget(label_93);
 
         label_100 = new QLabel(groupBox_12);
         label_100->setObjectName(QString::fromUtf8("label_100"));
-        label_100->setFont(font6);
+        label_100->setFont(font9);
 
         verticalLayout_5->addWidget(label_100);
 
         label_105 = new QLabel(groupBox_12);
         label_105->setObjectName(QString::fromUtf8("label_105"));
-        label_105->setFont(font6);
+        label_105->setFont(font9);
 
         verticalLayout_5->addWidget(label_105);
 
         label_87 = new QLabel(groupBox_12);
         label_87->setObjectName(QString::fromUtf8("label_87"));
-        label_87->setFont(font6);
+        label_87->setFont(font9);
 
         verticalLayout_5->addWidget(label_87);
 
         label_94 = new QLabel(groupBox_12);
         label_94->setObjectName(QString::fromUtf8("label_94"));
-        label_94->setFont(font6);
+        label_94->setFont(font9);
 
         verticalLayout_5->addWidget(label_94);
 
@@ -2348,30 +2509,35 @@ public:
         verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
         lineEdit_34 = new QLineEdit(groupBox_12);
         lineEdit_34->setObjectName(QString::fromUtf8("lineEdit_34"));
+        lineEdit_34->setMinimumSize(QSize(0, 30));
         lineEdit_34->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         verticalLayout_6->addWidget(lineEdit_34);
 
         lineEdit_26 = new QLineEdit(groupBox_12);
         lineEdit_26->setObjectName(QString::fromUtf8("lineEdit_26"));
+        lineEdit_26->setMinimumSize(QSize(0, 30));
         lineEdit_26->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         verticalLayout_6->addWidget(lineEdit_26);
 
         lineEdit_32 = new QLineEdit(groupBox_12);
         lineEdit_32->setObjectName(QString::fromUtf8("lineEdit_32"));
+        lineEdit_32->setMinimumSize(QSize(0, 30));
         lineEdit_32->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         verticalLayout_6->addWidget(lineEdit_32);
 
         lineEdit_29 = new QLineEdit(groupBox_12);
         lineEdit_29->setObjectName(QString::fromUtf8("lineEdit_29"));
+        lineEdit_29->setMinimumSize(QSize(0, 30));
         lineEdit_29->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         verticalLayout_6->addWidget(lineEdit_29);
 
         lineEdit_30 = new QLineEdit(groupBox_12);
         lineEdit_30->setObjectName(QString::fromUtf8("lineEdit_30"));
+        lineEdit_30->setMinimumSize(QSize(0, 30));
         lineEdit_30->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         verticalLayout_6->addWidget(lineEdit_30);
@@ -2387,31 +2553,31 @@ public:
         verticalLayout_9->setObjectName(QString::fromUtf8("verticalLayout_9"));
         label_103 = new QLabel(groupBox_12);
         label_103->setObjectName(QString::fromUtf8("label_103"));
-        label_103->setFont(font6);
+        label_103->setFont(font9);
 
         verticalLayout_9->addWidget(label_103);
 
         label_88 = new QLabel(groupBox_12);
         label_88->setObjectName(QString::fromUtf8("label_88"));
-        label_88->setFont(font6);
+        label_88->setFont(font9);
 
         verticalLayout_9->addWidget(label_88);
 
         label_96 = new QLabel(groupBox_12);
         label_96->setObjectName(QString::fromUtf8("label_96"));
-        label_96->setFont(font6);
+        label_96->setFont(font9);
 
         verticalLayout_9->addWidget(label_96);
 
         label_95 = new QLabel(groupBox_12);
         label_95->setObjectName(QString::fromUtf8("label_95"));
-        label_95->setFont(font6);
+        label_95->setFont(font9);
 
         verticalLayout_9->addWidget(label_95);
 
         label_129 = new QLabel(groupBox_12);
         label_129->setObjectName(QString::fromUtf8("label_129"));
-        label_129->setFont(font6);
+        label_129->setFont(font9);
 
         verticalLayout_9->addWidget(label_129);
 
@@ -2434,54 +2600,58 @@ public:
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         lineEdit_36 = new QLineEdit(groupBox_13);
         lineEdit_36->setObjectName(QString::fromUtf8("lineEdit_36"));
+        lineEdit_36->setMinimumSize(QSize(0, 30));
         lineEdit_36->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_2->addWidget(lineEdit_36, 1, 2, 1, 2);
 
         label_109 = new QLabel(groupBox_13);
         label_109->setObjectName(QString::fromUtf8("label_109"));
-        label_109->setFont(font6);
+        label_109->setFont(font9);
 
         gridLayout_2->addWidget(label_109, 1, 4, 1, 1);
 
         label_101 = new QLabel(groupBox_13);
         label_101->setObjectName(QString::fromUtf8("label_101"));
-        label_101->setFont(font6);
+        label_101->setFont(font9);
 
         gridLayout_2->addWidget(label_101, 1, 0, 1, 2);
 
         lineEdit_39 = new QLineEdit(groupBox_13);
         lineEdit_39->setObjectName(QString::fromUtf8("lineEdit_39"));
+        lineEdit_39->setMinimumSize(QSize(0, 30));
         lineEdit_39->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_2->addWidget(lineEdit_39, 4, 2, 1, 2);
 
         lineEdit_37 = new QLineEdit(groupBox_13);
         lineEdit_37->setObjectName(QString::fromUtf8("lineEdit_37"));
+        lineEdit_37->setMinimumSize(QSize(0, 30));
         lineEdit_37->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_2->addWidget(lineEdit_37, 2, 2, 1, 2);
 
         label_97 = new QLabel(groupBox_13);
         label_97->setObjectName(QString::fromUtf8("label_97"));
-        label_97->setFont(font6);
+        label_97->setFont(font9);
 
         gridLayout_2->addWidget(label_97, 0, 0, 1, 2);
 
         label_110 = new QLabel(groupBox_13);
         label_110->setObjectName(QString::fromUtf8("label_110"));
-        label_110->setFont(font6);
+        label_110->setFont(font9);
 
         gridLayout_2->addWidget(label_110, 0, 4, 1, 1);
 
         label_111 = new QLabel(groupBox_13);
         label_111->setObjectName(QString::fromUtf8("label_111"));
-        label_111->setFont(font6);
+        label_111->setFont(font9);
 
         gridLayout_2->addWidget(label_111, 2, 4, 1, 1);
 
         lineEdit_45 = new QLineEdit(groupBox_13);
         lineEdit_45->setObjectName(QString::fromUtf8("lineEdit_45"));
+        lineEdit_45->setMinimumSize(QSize(0, 30));
         lineEdit_45->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_2->addWidget(lineEdit_45, 5, 3, 1, 1);
@@ -2489,55 +2659,57 @@ public:
         lineEdit_35 = new QLineEdit(groupBox_13);
         lineEdit_35->setObjectName(QString::fromUtf8("lineEdit_35"));
         lineEdit_35->setEnabled(true);
+        lineEdit_35->setMinimumSize(QSize(0, 30));
         lineEdit_35->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_2->addWidget(lineEdit_35, 0, 2, 1, 2);
 
         label_112 = new QLabel(groupBox_13);
         label_112->setObjectName(QString::fromUtf8("label_112"));
-        label_112->setFont(font6);
+        label_112->setFont(font9);
 
         gridLayout_2->addWidget(label_112, 4, 4, 1, 1);
 
         label_108 = new QLabel(groupBox_13);
         label_108->setObjectName(QString::fromUtf8("label_108"));
-        label_108->setFont(font6);
+        label_108->setFont(font9);
 
         gridLayout_2->addWidget(label_108, 3, 4, 1, 1);
 
         lineEdit_38 = new QLineEdit(groupBox_13);
         lineEdit_38->setObjectName(QString::fromUtf8("lineEdit_38"));
+        lineEdit_38->setMinimumSize(QSize(0, 30));
         lineEdit_38->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_2->addWidget(lineEdit_38, 3, 2, 1, 2);
 
         label_98 = new QLabel(groupBox_13);
         label_98->setObjectName(QString::fromUtf8("label_98"));
-        label_98->setFont(font6);
+        label_98->setFont(font9);
 
         gridLayout_2->addWidget(label_98, 3, 0, 1, 2);
 
         label_107 = new QLabel(groupBox_13);
         label_107->setObjectName(QString::fromUtf8("label_107"));
-        label_107->setFont(font6);
+        label_107->setFont(font9);
 
         gridLayout_2->addWidget(label_107, 4, 0, 1, 2);
 
         label_120 = new QLabel(groupBox_13);
         label_120->setObjectName(QString::fromUtf8("label_120"));
-        label_120->setFont(font6);
+        label_120->setFont(font9);
 
         gridLayout_2->addWidget(label_120, 5, 4, 1, 1);
 
         label_106 = new QLabel(groupBox_13);
         label_106->setObjectName(QString::fromUtf8("label_106"));
-        label_106->setFont(font6);
+        label_106->setFont(font9);
 
         gridLayout_2->addWidget(label_106, 2, 0, 1, 2);
 
         label_119 = new QLabel(groupBox_13);
         label_119->setObjectName(QString::fromUtf8("label_119"));
-        label_119->setFont(font6);
+        label_119->setFont(font9);
 
         gridLayout_2->addWidget(label_119, 5, 0, 1, 1);
 
@@ -2549,91 +2721,96 @@ public:
         gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         lineEdit_51 = new QLineEdit(groupBox_13);
         lineEdit_51->setObjectName(QString::fromUtf8("lineEdit_51"));
+        lineEdit_51->setMinimumSize(QSize(0, 30));
         lineEdit_51->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_3->addWidget(lineEdit_51, 3, 1, 1, 1);
 
         label_131 = new QLabel(groupBox_13);
         label_131->setObjectName(QString::fromUtf8("label_131"));
-        label_131->setFont(font6);
+        label_131->setFont(font9);
 
         gridLayout_3->addWidget(label_131, 3, 2, 1, 1);
 
         label_123 = new QLabel(groupBox_13);
         label_123->setObjectName(QString::fromUtf8("label_123"));
-        label_123->setFont(font6);
+        label_123->setFont(font9);
 
         gridLayout_3->addWidget(label_123, 4, 2, 1, 1);
 
         lineEdit_47 = new QLineEdit(groupBox_13);
         lineEdit_47->setObjectName(QString::fromUtf8("lineEdit_47"));
+        lineEdit_47->setMinimumSize(QSize(0, 30));
         lineEdit_47->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_3->addWidget(lineEdit_47, 0, 1, 1, 1);
 
         label_124 = new QLabel(groupBox_13);
         label_124->setObjectName(QString::fromUtf8("label_124"));
-        label_124->setFont(font6);
+        label_124->setFont(font9);
 
         gridLayout_3->addWidget(label_124, 5, 0, 1, 1);
 
         label_132 = new QLabel(groupBox_13);
         label_132->setObjectName(QString::fromUtf8("label_132"));
-        label_132->setFont(font6);
+        label_132->setFont(font9);
 
         gridLayout_3->addWidget(label_132, 1, 0, 1, 1);
 
         label_135 = new QLabel(groupBox_13);
         label_135->setObjectName(QString::fromUtf8("label_135"));
-        label_135->setFont(font6);
+        label_135->setFont(font9);
 
         gridLayout_3->addWidget(label_135, 2, 0, 1, 1);
 
         label_128 = new QLabel(groupBox_13);
         label_128->setObjectName(QString::fromUtf8("label_128"));
-        label_128->setFont(font6);
+        label_128->setFont(font9);
 
         gridLayout_3->addWidget(label_128, 4, 0, 1, 1);
 
         lineEdit_46 = new QLineEdit(groupBox_13);
         lineEdit_46->setObjectName(QString::fromUtf8("lineEdit_46"));
+        lineEdit_46->setMinimumSize(QSize(0, 30));
         lineEdit_46->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_3->addWidget(lineEdit_46, 4, 1, 1, 1);
 
         lineEdit_49 = new QLineEdit(groupBox_13);
         lineEdit_49->setObjectName(QString::fromUtf8("lineEdit_49"));
+        lineEdit_49->setMinimumSize(QSize(0, 30));
         lineEdit_49->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_3->addWidget(lineEdit_49, 1, 1, 1, 1);
 
         lineEdit_48 = new QLineEdit(groupBox_13);
         lineEdit_48->setObjectName(QString::fromUtf8("lineEdit_48"));
+        lineEdit_48->setMinimumSize(QSize(0, 30));
         lineEdit_48->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
 
         gridLayout_3->addWidget(lineEdit_48, 2, 1, 1, 1);
 
         label_127 = new QLabel(groupBox_13);
         label_127->setObjectName(QString::fromUtf8("label_127"));
-        label_127->setFont(font6);
+        label_127->setFont(font9);
 
         gridLayout_3->addWidget(label_127, 3, 0, 1, 1);
 
         label_125 = new QLabel(groupBox_13);
         label_125->setObjectName(QString::fromUtf8("label_125"));
-        label_125->setFont(font6);
+        label_125->setFont(font9);
 
         gridLayout_3->addWidget(label_125, 0, 2, 1, 1);
 
         label_121 = new QLabel(groupBox_13);
         label_121->setObjectName(QString::fromUtf8("label_121"));
-        label_121->setFont(font6);
+        label_121->setFont(font9);
 
         gridLayout_3->addWidget(label_121, 1, 2, 1, 1);
 
         label_122 = new QLabel(groupBox_13);
         label_122->setObjectName(QString::fromUtf8("label_122"));
-        label_122->setFont(font6);
+        label_122->setFont(font9);
 
         gridLayout_3->addWidget(label_122, 2, 2, 1, 1);
 
@@ -2641,6 +2818,8 @@ public:
         comboBox_5->addItem(QString());
         comboBox_5->addItem(QString());
         comboBox_5->setObjectName(QString::fromUtf8("comboBox_5"));
+        comboBox_5->setMinimumSize(QSize(0, 30));
+        comboBox_5->setFont(font5);
         comboBox_5->setStyleSheet(QString::fromUtf8("/*\346\214\211\351\222\256\346\231\256\351\200\232\346\200\201*/\n"
 "QComboBox{\n"
 "         border-style: outset;\n"
@@ -2658,7 +2837,7 @@ public:
 
         label_126 = new QLabel(groupBox_13);
         label_126->setObjectName(QString::fromUtf8("label_126"));
-        label_126->setFont(font6);
+        label_126->setFont(font9);
 
         gridLayout_3->addWidget(label_126, 0, 0, 1, 1);
 
@@ -2672,95 +2851,95 @@ public:
         gridLayout_21->setContentsMargins(-1, -1, 0, -1);
         pushButton_18 = new QPushButton(groupBox_13);
         pushButton_18->setObjectName(QString::fromUtf8("pushButton_18"));
-        pushButton_18->setMinimumSize(QSize(50, 20));
-        QFont font8;
-        font8.setFamily(QString::fromUtf8("3ds"));
-        font8.setPointSize(8);
-        pushButton_18->setFont(font8);
+        pushButton_18->setMinimumSize(QSize(50, 30));
+        QFont font11;
+        font11.setFamily(QString::fromUtf8("3ds"));
+        font11.setPointSize(12);
+        pushButton_18->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_18, 0, 0, 1, 1);
 
         pushButton_20 = new QPushButton(groupBox_13);
         pushButton_20->setObjectName(QString::fromUtf8("pushButton_20"));
-        pushButton_20->setMinimumSize(QSize(50, 20));
-        pushButton_20->setFont(font8);
+        pushButton_20->setMinimumSize(QSize(50, 30));
+        pushButton_20->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_20, 0, 1, 1, 1);
 
         pushButton_19 = new QPushButton(groupBox_13);
         pushButton_19->setObjectName(QString::fromUtf8("pushButton_19"));
-        pushButton_19->setMinimumSize(QSize(50, 20));
-        pushButton_19->setFont(font8);
+        pushButton_19->setMinimumSize(QSize(50, 30));
+        pushButton_19->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_19, 0, 2, 1, 1);
 
         pushButton_54 = new QPushButton(groupBox_13);
         pushButton_54->setObjectName(QString::fromUtf8("pushButton_54"));
-        pushButton_54->setMinimumSize(QSize(50, 20));
-        pushButton_54->setFont(font8);
+        pushButton_54->setMinimumSize(QSize(50, 30));
+        pushButton_54->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_54, 0, 3, 1, 1);
 
         pushButton_23 = new QPushButton(groupBox_13);
         pushButton_23->setObjectName(QString::fromUtf8("pushButton_23"));
-        pushButton_23->setMinimumSize(QSize(50, 20));
-        pushButton_23->setFont(font8);
+        pushButton_23->setMinimumSize(QSize(50, 30));
+        pushButton_23->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_23, 1, 0, 1, 1);
 
         pushButton_21 = new QPushButton(groupBox_13);
         pushButton_21->setObjectName(QString::fromUtf8("pushButton_21"));
-        pushButton_21->setMinimumSize(QSize(50, 20));
-        pushButton_21->setFont(font8);
+        pushButton_21->setMinimumSize(QSize(50, 30));
+        pushButton_21->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_21, 1, 1, 1, 1);
 
         pushButton_22 = new QPushButton(groupBox_13);
         pushButton_22->setObjectName(QString::fromUtf8("pushButton_22"));
-        pushButton_22->setMinimumSize(QSize(50, 20));
-        pushButton_22->setFont(font8);
+        pushButton_22->setMinimumSize(QSize(50, 30));
+        pushButton_22->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_22, 1, 2, 1, 1);
 
         pushButton_53 = new QPushButton(groupBox_13);
         pushButton_53->setObjectName(QString::fromUtf8("pushButton_53"));
-        pushButton_53->setMinimumSize(QSize(50, 20));
-        pushButton_53->setFont(font8);
+        pushButton_53->setMinimumSize(QSize(50, 30));
+        pushButton_53->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_53, 1, 3, 1, 1);
 
         pushButton_26 = new QPushButton(groupBox_13);
         pushButton_26->setObjectName(QString::fromUtf8("pushButton_26"));
-        pushButton_26->setMinimumSize(QSize(50, 20));
-        pushButton_26->setFont(font8);
+        pushButton_26->setMinimumSize(QSize(50, 30));
+        pushButton_26->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_26, 2, 0, 1, 1);
 
         pushButton_24 = new QPushButton(groupBox_13);
         pushButton_24->setObjectName(QString::fromUtf8("pushButton_24"));
-        pushButton_24->setMinimumSize(QSize(50, 20));
-        pushButton_24->setFont(font8);
+        pushButton_24->setMinimumSize(QSize(50, 30));
+        pushButton_24->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_24, 2, 1, 1, 1);
 
         pushButton_25 = new QPushButton(groupBox_13);
         pushButton_25->setObjectName(QString::fromUtf8("pushButton_25"));
-        pushButton_25->setMinimumSize(QSize(50, 20));
-        pushButton_25->setFont(font8);
+        pushButton_25->setMinimumSize(QSize(50, 30));
+        pushButton_25->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_25, 2, 2, 1, 1);
 
         pushButton_52 = new QPushButton(groupBox_13);
         pushButton_52->setObjectName(QString::fromUtf8("pushButton_52"));
-        pushButton_52->setMinimumSize(QSize(50, 20));
-        pushButton_52->setFont(font8);
+        pushButton_52->setMinimumSize(QSize(50, 30));
+        pushButton_52->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_52, 2, 3, 1, 1);
 
         pushButton_29 = new QPushButton(groupBox_13);
         pushButton_29->setObjectName(QString::fromUtf8("pushButton_29"));
-        pushButton_29->setMinimumSize(QSize(50, 20));
-        pushButton_29->setFont(font8);
+        pushButton_29->setMinimumSize(QSize(50, 30));
+        pushButton_29->setFont(font11);
         pushButton_29->setAutoDefault(false);
         pushButton_29->setFlat(false);
 
@@ -2768,57 +2947,57 @@ public:
 
         pushButton_27 = new QPushButton(groupBox_13);
         pushButton_27->setObjectName(QString::fromUtf8("pushButton_27"));
-        pushButton_27->setMinimumSize(QSize(50, 20));
-        pushButton_27->setFont(font8);
+        pushButton_27->setMinimumSize(QSize(50, 30));
+        pushButton_27->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_27, 3, 1, 1, 1);
 
         pushButton_28 = new QPushButton(groupBox_13);
         pushButton_28->setObjectName(QString::fromUtf8("pushButton_28"));
-        pushButton_28->setMinimumSize(QSize(50, 20));
-        pushButton_28->setFont(font8);
+        pushButton_28->setMinimumSize(QSize(50, 30));
+        pushButton_28->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_28, 3, 2, 1, 1);
 
         pushButton_51 = new QPushButton(groupBox_13);
         pushButton_51->setObjectName(QString::fromUtf8("pushButton_51"));
-        pushButton_51->setMinimumSize(QSize(50, 20));
-        pushButton_51->setFont(font8);
+        pushButton_51->setMinimumSize(QSize(50, 30));
+        pushButton_51->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_51, 3, 3, 1, 1);
 
         pushButton_32 = new QPushButton(groupBox_13);
         pushButton_32->setObjectName(QString::fromUtf8("pushButton_32"));
-        pushButton_32->setMinimumSize(QSize(50, 20));
-        pushButton_32->setFont(font8);
+        pushButton_32->setMinimumSize(QSize(50, 30));
+        pushButton_32->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_32, 4, 0, 1, 1);
 
         pushButton_30 = new QPushButton(groupBox_13);
         pushButton_30->setObjectName(QString::fromUtf8("pushButton_30"));
-        pushButton_30->setMinimumSize(QSize(50, 20));
-        pushButton_30->setFont(font8);
+        pushButton_30->setMinimumSize(QSize(50, 30));
+        pushButton_30->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_30, 4, 1, 1, 1);
 
         pushButton_31 = new QPushButton(groupBox_13);
         pushButton_31->setObjectName(QString::fromUtf8("pushButton_31"));
-        pushButton_31->setMinimumSize(QSize(50, 20));
-        pushButton_31->setFont(font8);
+        pushButton_31->setMinimumSize(QSize(50, 30));
+        pushButton_31->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_31, 4, 2, 1, 1);
 
         pushButton_33 = new QPushButton(groupBox_13);
         pushButton_33->setObjectName(QString::fromUtf8("pushButton_33"));
-        pushButton_33->setMinimumSize(QSize(50, 20));
-        pushButton_33->setFont(font8);
+        pushButton_33->setMinimumSize(QSize(50, 30));
+        pushButton_33->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_33, 5, 0, 1, 1);
 
         pushButton_34 = new QPushButton(groupBox_13);
         pushButton_34->setObjectName(QString::fromUtf8("pushButton_34"));
-        pushButton_34->setMinimumSize(QSize(50, 20));
-        pushButton_34->setFont(font8);
+        pushButton_34->setMinimumSize(QSize(50, 30));
+        pushButton_34->setFont(font11);
 
         gridLayout_21->addWidget(pushButton_34, 5, 2, 1, 1);
 
@@ -2830,8 +3009,8 @@ public:
         gridLayout_22->setObjectName(QString::fromUtf8("gridLayout_22"));
         pushButton_45 = new QPushButton(groupBox_13);
         pushButton_45->setObjectName(QString::fromUtf8("pushButton_45"));
-        pushButton_45->setMinimumSize(QSize(50, 20));
-        pushButton_45->setFont(font8);
+        pushButton_45->setMinimumSize(QSize(50, 30));
+        pushButton_45->setFont(font11);
 
         gridLayout_22->addWidget(pushButton_45, 0, 0, 1, 1);
 
@@ -2839,6 +3018,8 @@ public:
         comboBox_7->addItem(QString());
         comboBox_7->addItem(QString());
         comboBox_7->setObjectName(QString::fromUtf8("comboBox_7"));
+        comboBox_7->setMinimumSize(QSize(0, 30));
+        comboBox_7->setFont(font5);
         comboBox_7->setStyleSheet(QString::fromUtf8("/*\346\214\211\351\222\256\346\231\256\351\200\232\346\200\201*/\n"
 "QComboBox{\n"
 "         border-style: outset;\n"
@@ -2854,6 +3035,8 @@ public:
         comboBox_8->addItem(QString());
         comboBox_8->addItem(QString());
         comboBox_8->setObjectName(QString::fromUtf8("comboBox_8"));
+        comboBox_8->setMinimumSize(QSize(0, 30));
+        comboBox_8->setFont(font5);
         comboBox_8->setStyleSheet(QString::fromUtf8("/*\346\214\211\351\222\256\346\231\256\351\200\232\346\200\201*/\n"
 "QComboBox{\n"
 "         border-style: outset;\n"
@@ -2867,22 +3050,22 @@ public:
 
         pushButton_47 = new QPushButton(groupBox_13);
         pushButton_47->setObjectName(QString::fromUtf8("pushButton_47"));
-        pushButton_47->setMinimumSize(QSize(50, 20));
-        pushButton_47->setFont(font8);
+        pushButton_47->setMinimumSize(QSize(50, 30));
+        pushButton_47->setFont(font11);
 
         gridLayout_22->addWidget(pushButton_47, 1, 0, 1, 1);
 
         pushButton_48 = new QPushButton(groupBox_13);
         pushButton_48->setObjectName(QString::fromUtf8("pushButton_48"));
-        pushButton_48->setMinimumSize(QSize(50, 20));
-        pushButton_48->setFont(font8);
+        pushButton_48->setMinimumSize(QSize(50, 30));
+        pushButton_48->setFont(font11);
 
         gridLayout_22->addWidget(pushButton_48, 1, 1, 1, 1);
 
         pushButton_49 = new QPushButton(groupBox_13);
         pushButton_49->setObjectName(QString::fromUtf8("pushButton_49"));
-        pushButton_49->setMinimumSize(QSize(50, 20));
-        pushButton_49->setFont(font8);
+        pushButton_49->setMinimumSize(QSize(50, 30));
+        pushButton_49->setFont(font11);
 
         gridLayout_22->addWidget(pushButton_49, 1, 2, 1, 1);
 
@@ -2890,6 +3073,8 @@ public:
         comboBox_6->addItem(QString());
         comboBox_6->addItem(QString());
         comboBox_6->setObjectName(QString::fromUtf8("comboBox_6"));
+        comboBox_6->setMinimumSize(QSize(0, 30));
+        comboBox_6->setFont(font5);
         comboBox_6->setStyleSheet(QString::fromUtf8("/*\346\214\211\351\222\256\346\231\256\351\200\232\346\200\201*/\n"
 "QComboBox{\n"
 "         border-style: outset;\n"
@@ -2903,8 +3088,8 @@ public:
 
         pushButton_46 = new QPushButton(groupBox_13);
         pushButton_46->setObjectName(QString::fromUtf8("pushButton_46"));
-        pushButton_46->setMinimumSize(QSize(50, 20));
-        pushButton_46->setFont(font8);
+        pushButton_46->setMinimumSize(QSize(50, 30));
+        pushButton_46->setFont(font11);
 
         gridLayout_22->addWidget(pushButton_46, 0, 1, 1, 1);
 
@@ -2931,10 +3116,7 @@ public:
         pushButton_8 = new QPushButton(groupBox_15);
         pushButton_8->setObjectName(QString::fromUtf8("pushButton_8"));
         pushButton_8->setMinimumSize(QSize(0, 50));
-        QFont font9;
-        font9.setFamily(QString::fromUtf8("3ds"));
-        font9.setPointSize(12);
-        pushButton_8->setFont(font9);
+        pushButton_8->setFont(font11);
         pushButton_8->setStyleSheet(QString::fromUtf8("/*\346\214\211\351\222\256\346\231\256\351\200\232\346\200\201*/\n"
 "QPushButton{\n"
 "         border-style: outset;\n"
@@ -2969,7 +3151,7 @@ public:
         pushButton_3 = new QPushButton(groupBox_15);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
         pushButton_3->setMinimumSize(QSize(0, 50));
-        pushButton_3->setFont(font9);
+        pushButton_3->setFont(font11);
         pushButton_3->setStyleSheet(QString::fromUtf8("/*\346\214\211\351\222\256\346\231\256\351\200\232\346\200\201*/\n"
 "QPushButton{\n"
 "         border-style: outset;\n"
@@ -3004,7 +3186,7 @@ public:
         pushButton_5 = new QPushButton(groupBox_15);
         pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
         pushButton_5->setMinimumSize(QSize(0, 50));
-        pushButton_5->setFont(font9);
+        pushButton_5->setFont(font11);
         pushButton_5->setStyleSheet(QString::fromUtf8("/*\346\214\211\351\222\256\346\231\256\351\200\232\346\200\201*/\n"
 "QPushButton{\n"
 "         border-style: outset;\n"
@@ -3040,7 +3222,7 @@ public:
         pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
         pushButton_6->setEnabled(true);
         pushButton_6->setMinimumSize(QSize(0, 50));
-        pushButton_6->setFont(font9);
+        pushButton_6->setFont(font11);
         pushButton_6->setStyleSheet(QString::fromUtf8("/*\346\214\211\351\222\256\346\231\256\351\200\232\346\200\201*/\n"
 "QPushButton{\n"
 "         border-style: outset;\n"
@@ -3075,7 +3257,7 @@ public:
         pushButton_9 = new QPushButton(groupBox_15);
         pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
         pushButton_9->setMinimumSize(QSize(0, 50));
-        pushButton_9->setFont(font9);
+        pushButton_9->setFont(font11);
         pushButton_9->setStyleSheet(QString::fromUtf8("/*\346\214\211\351\222\256\346\231\256\351\200\232\346\200\201*/\n"
 "QPushButton{\n"
 "         border-style: outset;\n"
@@ -3110,7 +3292,7 @@ public:
         pushButton_4 = new QPushButton(groupBox_15);
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
         pushButton_4->setMinimumSize(QSize(0, 50));
-        pushButton_4->setFont(font9);
+        pushButton_4->setFont(font11);
         pushButton_4->setStyleSheet(QString::fromUtf8("/*\346\214\211\351\222\256\346\231\256\351\200\232\346\200\201*/\n"
 "QPushButton{\n"
 "         border-style: outset;\n"
@@ -3145,7 +3327,7 @@ public:
         pushButton_39 = new QPushButton(groupBox_15);
         pushButton_39->setObjectName(QString::fromUtf8("pushButton_39"));
         pushButton_39->setMinimumSize(QSize(0, 50));
-        pushButton_39->setFont(font9);
+        pushButton_39->setFont(font11);
         pushButton_39->setStyleSheet(QString::fromUtf8("/*\346\214\211\351\222\256\346\231\256\351\200\232\346\200\201*/\n"
 "QPushButton{\n"
 "         border-style: outset;\n"
@@ -3184,7 +3366,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1053, 23));
+        menuBar->setGeometry(QRect(0, 0, 1145, 23));
         menu_F = new QMenu(menuBar);
         menu_F->setObjectName(QString::fromUtf8("menu_F"));
         menu_C = new QMenu(menuBar);
@@ -3232,7 +3414,7 @@ public:
 
         stackedWidget->setCurrentIndex(1);
         pushButton->setDefault(false);
-        stackedWidget_2->setCurrentIndex(2);
+        stackedWidget_2->setCurrentIndex(1);
         pushButton_29->setDefault(false);
 
 
@@ -3325,11 +3507,6 @@ public:
         label_130->setText(QCoreApplication::translate("MainWindow", "mm", nullptr));
         label_141->setText(QCoreApplication::translate("MainWindow", "\345\267\245\345\205\267\345\244\264\351\253\230\345\272\246\357\274\232 ", nullptr));
         label_134->setText(QCoreApplication::translate("MainWindow", "mm", nullptr));
-        groupBox_5->setTitle(QCoreApplication::translate("MainWindow", "\350\275\254\351\200\237", nullptr));
-        label_3->setText(QCoreApplication::translate("MainWindow", "  \345\267\245\344\273\266\350\275\254\351\200\237:", nullptr));
-        label_40->setText(QCoreApplication::translate("MainWindow", "rpm", nullptr));
-        label_54->setText(QCoreApplication::translate("MainWindow", "\346\212\233\345\205\211\345\244\264\350\275\254\351\200\237:", nullptr));
-        label_41->setText(QCoreApplication::translate("MainWindow", "rpm", nullptr));
         groupBox_7->setTitle(QString());
         label_47->setText(QCoreApplication::translate("MainWindow", "      \347\243\250\345\244\264\347\261\273\345\236\213\357\274\232", nullptr));
         label_49->setText(QCoreApplication::translate("MainWindow", "mm", nullptr));
@@ -3349,12 +3526,18 @@ public:
         comboBox_toolRaidus->setItemText(0, QCoreApplication::translate("MainWindow", "\347\220\203\351\235\242\347\243\250\345\244\264", nullptr));
         comboBox_toolRaidus->setItemText(1, QCoreApplication::translate("MainWindow", "\345\271\263\351\235\242\347\243\250\345\244\264", nullptr));
 
+        groupBox_5->setTitle(QCoreApplication::translate("MainWindow", "\350\275\254\351\200\237", nullptr));
+        label_3->setText(QCoreApplication::translate("MainWindow", "  \345\267\245\344\273\266\350\275\254\351\200\237:", nullptr));
+        label_40->setText(QCoreApplication::translate("MainWindow", "rpm", nullptr));
+        label_54->setText(QCoreApplication::translate("MainWindow", "\346\212\233\345\205\211\345\244\264\350\275\254\351\200\237:", nullptr));
+        label_41->setText(QCoreApplication::translate("MainWindow", "rpm", nullptr));
+        groupBox_17->setTitle(QCoreApplication::translate("MainWindow", "\350\241\245\345\201\277\345\217\202\346\225\260", nullptr));
+        label_84->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         groupBox_9->setTitle(QString());
         pushButton_13->setText(QCoreApplication::translate("MainWindow", "\344\277\235\345\255\230", nullptr));
         pushButton_12->setText(QCoreApplication::translate("MainWindow", "\350\257\273\345\217\226", nullptr));
         pushButton_14->setText(QCoreApplication::translate("MainWindow", "\345\272\224\347\224\250", nullptr));
         pushButton_44->setText(QCoreApplication::translate("MainWindow", "\345\271\262\346\266\211\346\243\200\346\237\245", nullptr));
-        pushButton_50->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         label_60->setText(QCoreApplication::translate("MainWindow", "\351\235\242\345\236\213\350\257\257\345\267\256\346\225\260\346\215\256\357\274\232", nullptr));
         pushButton_15->setText(QCoreApplication::translate("MainWindow", "\345\257\274 \350\277\233", nullptr));
         pushButton_40->setText(QCoreApplication::translate("MainWindow", "\347\224\237\346\210\220\346\240\207\345\207\206\344\273\243\347\240\201", nullptr));
@@ -3363,6 +3546,9 @@ public:
         pushButton_43->setText(QCoreApplication::translate("MainWindow", "\345\257\274\345\205\245\350\241\245\346\255\243\344\273\243\347\240\201", nullptr));
         label_115->setText(QCoreApplication::translate("MainWindow", "\346\240\207\345\207\206\345\212\240\345\267\245\346\254\241\346\225\260\357\274\232", nullptr));
         label_117->setText(QCoreApplication::translate("MainWindow", "\350\241\245\346\255\243\345\212\240\345\267\245\346\254\241\346\225\260\357\274\232", nullptr));
+        groupBox_10->setTitle(QString());
+        pushButton_16->setText(QCoreApplication::translate("MainWindow", "\346\211\247\350\241\214", nullptr));
+        pushButton_17->setText(QCoreApplication::translate("MainWindow", "\347\273\210\346\255\242", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "\351\225\234\347\211\207\345\220\215\347\247\260\357\274\232", nullptr));
         label_62->setText(QCoreApplication::translate("MainWindow", "X:", nullptr));
         label_68->setText(QCoreApplication::translate("MainWindow", "mm", nullptr));
@@ -3390,9 +3576,6 @@ public:
         label_139->setText(QCoreApplication::translate("MainWindow", " \345\212\240\345\267\245\346\254\241\346\225\260\357\274\232", nullptr));
         label_138->setText(QCoreApplication::translate("MainWindow", "\345\211\251\344\275\231\345\212\240\345\267\245\346\227\266\351\227\264\357\274\232", nullptr));
         label_82->setText(QCoreApplication::translate("MainWindow", "\345\210\206\351\222\237", nullptr));
-        groupBox_10->setTitle(QString());
-        pushButton_16->setText(QCoreApplication::translate("MainWindow", "\346\211\247\350\241\214", nullptr));
-        pushButton_17->setText(QCoreApplication::translate("MainWindow", "\347\273\210\346\255\242", nullptr));
         groupBox_14->setTitle(QString());
         pushButton_35->setText(QCoreApplication::translate("MainWindow", "\345\210\235\345\247\213\345\212\240\345\267\245\347\202\271\345\267\246", nullptr));
         pushButton_36->setText(QCoreApplication::translate("MainWindow", "\345\210\235\345\247\213\345\212\240\345\267\245\347\202\271\345\217\263", nullptr));

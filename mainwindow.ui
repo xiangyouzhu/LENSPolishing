@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1053</width>
-    <height>768</height>
+    <width>1145</width>
+    <height>791</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -38,8 +38,8 @@
      <rect>
       <x>9</x>
       <y>9</y>
-      <width>1035</width>
-      <height>671</height>
+      <width>1140</width>
+      <height>706</height>
      </rect>
     </property>
     <property name="minimumSize">
@@ -323,6 +323,11 @@ QPushButton:pressed
         <layout class="QGridLayout" name="gridLayout_28">
          <item row="0" column="0">
           <widget class="QStackedWidget" name="stackedWidget_2">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
            <property name="layoutDirection">
             <enum>Qt::LeftToRight</enum>
            </property>
@@ -359,7 +364,7 @@ QPushButton:pressed
             <enum>QFrame::Plain</enum>
            </property>
            <property name="currentIndex">
-            <number>2</number>
+            <number>1</number>
            </property>
            <widget class="QWidget" name="page_3">
             <property name="styleSheet">
@@ -386,6 +391,12 @@ QPushButton:pressed
                </item>
                <item row="0" column="1">
                 <widget class="QLineEdit" name="lineEdit_Lensname">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">background-color: rgb(255, 255, 255);</string>
                  </property>
@@ -410,8 +421,13 @@ QPushButton:pressed
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
-                    <height>20</height>
+                    <height>30</height>
                    </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
                   </property>
                   <property name="text">
                    <string>读取</string>
@@ -423,8 +439,13 @@ QPushButton:pressed
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
-                    <height>20</height>
+                    <height>30</height>
                    </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
                   </property>
                   <property name="text">
                    <string>保存</string>
@@ -436,8 +457,13 @@ QPushButton:pressed
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
-                    <height>20</height>
+                    <height>30</height>
                    </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
                   </property>
                   <property name="text">
                    <string>应用</string>
@@ -477,6 +503,11 @@ QPushButton:pressed
                  <height>271</height>
                 </size>
                </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
                <property name="styleSheet">
                 <string notr="true"/>
                </property>
@@ -486,6 +517,11 @@ QPushButton:pressed
                <layout class="QGridLayout" name="gridLayout_18">
                 <item row="0" column="0">
                  <widget class="QLabel" name="label_8">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
                   <property name="text">
                    <string>非球面矢高(Hc)  </string>
                   </property>
@@ -493,6 +529,12 @@ QPushButton:pressed
                 </item>
                 <item row="0" column="1">
                  <widget class="QLineEdit" name="lineEdit_HC">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>30</height>
+                   </size>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true">background-color: rgb(255, 255, 255);</string>
                   </property>
@@ -507,6 +549,11 @@ QPushButton:pressed
                 </item>
                 <item row="1" column="0">
                  <widget class="QLabel" name="label_9">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
                   <property name="text">
                    <string>边缘高度(He)  </string>
                   </property>
@@ -514,6 +561,12 @@ QPushButton:pressed
                 </item>
                 <item row="1" column="1">
                  <widget class="QLineEdit" name="lineEdit_HE">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>30</height>
+                   </size>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true">background-color: rgb(255, 255, 255);</string>
                   </property>
@@ -528,6 +581,11 @@ QPushButton:pressed
                 </item>
                 <item row="2" column="0">
                  <widget class="QLabel" name="label_114">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
                   <property name="text">
                    <string>圆角半径(r)  </string>
                   </property>
@@ -535,6 +593,12 @@ QPushButton:pressed
                 </item>
                 <item row="2" column="1">
                  <widget class="QLineEdit" name="lineEdit_yuan_r">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>30</height>
+                   </size>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true">background-color: rgb(255, 255, 255);</string>
                   </property>
@@ -549,6 +613,11 @@ QPushButton:pressed
                 </item>
                 <item row="3" column="0">
                  <widget class="QLabel" name="label_12">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
                   <property name="text">
                    <string>镜片直径(D)  </string>
                   </property>
@@ -556,6 +625,12 @@ QPushButton:pressed
                 </item>
                 <item row="3" column="1">
                  <widget class="QLineEdit" name="lineEdit_D">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>30</height>
+                   </size>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true">background-color: rgb(255, 255, 255);</string>
                   </property>
@@ -570,6 +645,11 @@ QPushButton:pressed
                 </item>
                 <item row="4" column="0">
                  <widget class="QLabel" name="label_11">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
                   <property name="text">
                    <string>加工口径(Dp)  </string>
                   </property>
@@ -577,6 +657,12 @@ QPushButton:pressed
                 </item>
                 <item row="4" column="1">
                  <widget class="QLineEdit" name="lineEdit_DP">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>30</height>
+                   </size>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true">background-color: rgb(255, 255, 255);</string>
                   </property>
@@ -612,12 +698,22 @@ QPushButton:pressed
                  <height>71</height>
                 </size>
                </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
                <property name="title">
                 <string>曲面类型</string>
                </property>
                <layout class="QHBoxLayout" name="horizontalLayout_4">
                 <item>
                  <widget class="QRadioButton" name="Lens_ao">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
                   <property name="text">
                    <string>凹曲面</string>
                   </property>
@@ -625,6 +721,11 @@ QPushButton:pressed
                 </item>
                 <item>
                  <widget class="QRadioButton" name="Lens_tu">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
                   <property name="text">
                    <string>凸曲面</string>
                   </property>
@@ -654,6 +755,11 @@ QPushButton:pressed
              </item>
              <item row="2" column="2" rowspan="5">
               <widget class="QGroupBox" name="groupBox_4">
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
                <property name="title">
                 <string>非球面参数</string>
                </property>
@@ -669,6 +775,12 @@ QPushButton:pressed
                   </item>
                   <item row="0" column="1">
                    <widget class="QLineEdit" name="lineEdit_R">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -683,6 +795,12 @@ QPushButton:pressed
                   </item>
                   <item row="1" column="1">
                    <widget class="QLineEdit" name="lineEdit_K">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -697,6 +815,12 @@ QPushButton:pressed
                   </item>
                   <item row="2" column="1">
                    <widget class="QLineEdit" name="lineEdit_A1">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -711,6 +835,12 @@ QPushButton:pressed
                   </item>
                   <item row="2" column="3">
                    <widget class="QLineEdit" name="lineEdit_A2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -731,6 +861,12 @@ QPushButton:pressed
                   </item>
                   <item row="3" column="1">
                    <widget class="QLineEdit" name="lineEdit_A3">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -745,6 +881,12 @@ QPushButton:pressed
                   </item>
                   <item row="3" column="3">
                    <widget class="QLineEdit" name="lineEdit_A4">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="cursor">
                      <cursorShape>IBeamCursor</cursorShape>
                     </property>
@@ -768,6 +910,12 @@ QPushButton:pressed
                   </item>
                   <item row="4" column="1">
                    <widget class="QLineEdit" name="lineEdit_A5">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -782,6 +930,12 @@ QPushButton:pressed
                   </item>
                   <item row="4" column="3">
                    <widget class="QLineEdit" name="lineEdit_A6">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -796,6 +950,12 @@ QPushButton:pressed
                   </item>
                   <item row="5" column="1">
                    <widget class="QLineEdit" name="lineEdit_A7">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -810,6 +970,12 @@ QPushButton:pressed
                   </item>
                   <item row="5" column="3">
                    <widget class="QLineEdit" name="lineEdit_A8">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -824,6 +990,12 @@ QPushButton:pressed
                   </item>
                   <item row="6" column="1">
                    <widget class="QLineEdit" name="lineEdit_A9">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -838,6 +1010,12 @@ QPushButton:pressed
                   </item>
                   <item row="6" column="3">
                    <widget class="QLineEdit" name="lineEdit_A10">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -852,6 +1030,12 @@ QPushButton:pressed
                   </item>
                   <item row="7" column="1">
                    <widget class="QLineEdit" name="lineEdit_A11">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -866,6 +1050,12 @@ QPushButton:pressed
                   </item>
                   <item row="7" column="3">
                    <widget class="QLineEdit" name="lineEdit_A12">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -880,6 +1070,12 @@ QPushButton:pressed
                   </item>
                   <item row="8" column="1">
                    <widget class="QLineEdit" name="lineEdit_A13">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -894,6 +1090,12 @@ QPushButton:pressed
                   </item>
                   <item row="8" column="3">
                    <widget class="QLineEdit" name="lineEdit_A14">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -908,6 +1110,12 @@ QPushButton:pressed
                   </item>
                   <item row="9" column="1">
                    <widget class="QLineEdit" name="lineEdit_A15">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -922,6 +1130,12 @@ QPushButton:pressed
                   </item>
                   <item row="9" column="3">
                    <widget class="QLineEdit" name="lineEdit_A16">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -936,6 +1150,12 @@ QPushButton:pressed
                   </item>
                   <item row="10" column="1">
                    <widget class="QLineEdit" name="lineEdit_A17">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -950,6 +1170,12 @@ QPushButton:pressed
                   </item>
                   <item row="10" column="3">
                    <widget class="QLineEdit" name="lineEdit_A18">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -964,6 +1190,12 @@ QPushButton:pressed
                   </item>
                   <item row="11" column="1">
                    <widget class="QLineEdit" name="lineEdit_A19">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="autoFillBackground">
                      <bool>false</bool>
                     </property>
@@ -981,6 +1213,12 @@ QPushButton:pressed
                   </item>
                   <item row="11" column="3">
                    <widget class="QLineEdit" name="lineEdit_A20">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -1109,24 +1347,13 @@ QPushButton:pressed
              </item>
              <item>
               <layout class="QGridLayout" name="gridLayout_15">
-               <item row="1" column="0">
-                <spacer name="verticalSpacer">
-                 <property name="orientation">
-                  <enum>Qt::Vertical</enum>
-                 </property>
-                 <property name="sizeType">
-                  <enum>QSizePolicy::Fixed</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>20</width>
-                   <height>100</height>
-                  </size>
-                 </property>
-                </spacer>
-               </item>
                <item row="0" column="1">
                 <widget class="QGroupBox" name="groupBox_6">
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
                  <property name="title">
                   <string>进给速度</string>
                  </property>
@@ -1135,6 +1362,11 @@ QPushButton:pressed
                    <layout class="QVBoxLayout" name="verticalLayout_2">
                     <item>
                      <widget class="QRadioButton" name="radioButton_constantFeed">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>恒速进给</string>
                       </property>
@@ -1144,6 +1376,11 @@ QPushButton:pressed
                      <layout class="QHBoxLayout" name="horizontalLayout_14">
                       <item>
                        <widget class="QLabel" name="label_42">
+                        <property name="font">
+                         <font>
+                          <pointsize>12</pointsize>
+                         </font>
+                        </property>
                         <property name="text">
                          <string>进给速度：</string>
                         </property>
@@ -1151,6 +1388,12 @@ QPushButton:pressed
                       </item>
                       <item>
                        <widget class="QLineEdit" name="lineEdit_constfeed">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>30</height>
+                         </size>
+                        </property>
                         <property name="styleSheet">
                          <string notr="true">background-color: rgb(255, 255, 255);</string>
                         </property>
@@ -1158,6 +1401,11 @@ QPushButton:pressed
                       </item>
                       <item>
                        <widget class="QLabel" name="label_44">
+                        <property name="font">
+                         <font>
+                          <pointsize>12</pointsize>
+                         </font>
+                        </property>
                         <property name="text">
                          <string>mm/min</string>
                         </property>
@@ -1167,6 +1415,11 @@ QPushButton:pressed
                     </item>
                     <item>
                      <widget class="QRadioButton" name="radioButton_ChangedFeed">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>变速进给</string>
                       </property>
@@ -1176,6 +1429,11 @@ QPushButton:pressed
                      <layout class="QHBoxLayout" name="horizontalLayout_13">
                       <item>
                        <widget class="QLabel" name="label_43">
+                        <property name="font">
+                         <font>
+                          <pointsize>12</pointsize>
+                         </font>
+                        </property>
                         <property name="text">
                          <string>进给倍率：</string>
                         </property>
@@ -1183,6 +1441,12 @@ QPushButton:pressed
                       </item>
                       <item>
                        <widget class="QLineEdit" name="lineEdit_feedrate">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>30</height>
+                         </size>
+                        </property>
                         <property name="styleSheet">
                          <string notr="true">background-color: rgb(255, 255, 255);</string>
                         </property>
@@ -1190,6 +1454,11 @@ QPushButton:pressed
                       </item>
                       <item>
                        <widget class="QLabel" name="label_45">
+                        <property name="font">
+                         <font>
+                          <pointsize>12</pointsize>
+                         </font>
+                        </property>
                         <property name="text">
                          <string>%     </string>
                         </property>
@@ -1212,6 +1481,11 @@ QPushButton:pressed
                    <layout class="QGridLayout" name="gridLayout_6">
                     <item row="0" column="0">
                      <widget class="QLabel" name="label_52">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>加工范围：  </string>
                       </property>
@@ -1219,6 +1493,12 @@ QPushButton:pressed
                     </item>
                     <item row="0" column="1">
                      <widget class="QLineEdit" name="lineEdit_ProdessLeft">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
                       <property name="styleSheet">
                        <string notr="true">background-color: rgb(255, 255, 255);</string>
                       </property>
@@ -1226,6 +1506,11 @@ QPushButton:pressed
                     </item>
                     <item row="0" column="2">
                      <widget class="QLabel" name="label_113">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>到</string>
                       </property>
@@ -1233,6 +1518,12 @@ QPushButton:pressed
                     </item>
                     <item row="0" column="3">
                      <widget class="QLineEdit" name="lineEdit_ProcessRight">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
                       <property name="styleSheet">
                        <string notr="true">background-color: rgb(255, 255, 255);</string>
                       </property>
@@ -1240,6 +1531,11 @@ QPushButton:pressed
                     </item>
                     <item row="0" column="4">
                      <widget class="QLabel" name="label_56">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>mm</string>
                       </property>
@@ -1247,6 +1543,11 @@ QPushButton:pressed
                     </item>
                     <item row="1" column="0">
                      <widget class="QLabel" name="label_53">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>压缩量： </string>
                       </property>
@@ -1260,6 +1561,12 @@ QPushButton:pressed
                         <verstretch>0</verstretch>
                        </sizepolicy>
                       </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
                       <property name="styleSheet">
                        <string notr="true">background-color: rgb(255, 255, 255);</string>
                       </property>
@@ -1267,6 +1574,11 @@ QPushButton:pressed
                     </item>
                     <item row="1" column="4">
                      <widget class="QLabel" name="label_57">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>mm</string>
                       </property>
@@ -1274,6 +1586,11 @@ QPushButton:pressed
                     </item>
                     <item row="2" column="0">
                      <widget class="QLabel" name="label_55">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>加工次数： </string>
                       </property>
@@ -1287,6 +1604,12 @@ QPushButton:pressed
                         <verstretch>0</verstretch>
                        </sizepolicy>
                       </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
                       <property name="styleSheet">
                        <string notr="true">background-color: rgb(255, 255, 255);</string>
                       </property>
@@ -1294,6 +1617,11 @@ QPushButton:pressed
                     </item>
                     <item row="2" column="4">
                      <widget class="QLabel" name="label_58">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>次</string>
                       </property>
@@ -1301,6 +1629,11 @@ QPushButton:pressed
                     </item>
                     <item row="3" column="0">
                      <widget class="QLabel" name="label_133">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>磨头直径： </string>
                       </property>
@@ -1314,6 +1647,12 @@ QPushButton:pressed
                         <verstretch>0</verstretch>
                        </sizepolicy>
                       </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
                       <property name="styleSheet">
                        <string notr="true">background-color: rgb(255, 255, 255);</string>
                       </property>
@@ -1321,6 +1660,11 @@ QPushButton:pressed
                     </item>
                     <item row="3" column="4">
                      <widget class="QLabel" name="label_116">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>mm</string>
                       </property>
@@ -1328,6 +1672,11 @@ QPushButton:pressed
                     </item>
                     <item row="4" column="0">
                      <widget class="QLabel" name="label_136">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>抛光垫厚度： </string>
                       </property>
@@ -1341,6 +1690,12 @@ QPushButton:pressed
                         <verstretch>0</verstretch>
                        </sizepolicy>
                       </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
                       <property name="styleSheet">
                        <string notr="true">background-color: rgb(255, 255, 255);</string>
                       </property>
@@ -1348,6 +1703,11 @@ QPushButton:pressed
                     </item>
                     <item row="4" column="4">
                      <widget class="QLabel" name="label_130">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>mm</string>
                       </property>
@@ -1355,6 +1715,11 @@ QPushButton:pressed
                     </item>
                     <item row="5" column="0">
                      <widget class="QLabel" name="label_141">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>工具头高度： </string>
                       </property>
@@ -1368,6 +1733,12 @@ QPushButton:pressed
                         <verstretch>0</verstretch>
                        </sizepolicy>
                       </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
                       <property name="styleSheet">
                        <string notr="true">background-color: rgb(255, 255, 255);</string>
                       </property>
@@ -1375,69 +1746,13 @@ QPushButton:pressed
                     </item>
                     <item row="5" column="4">
                      <widget class="QLabel" name="label_134">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>mm</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
-                 </layout>
-                </widget>
-               </item>
-               <item row="0" column="0">
-                <widget class="QGroupBox" name="groupBox_5">
-                 <property name="title">
-                  <string>转速</string>
-                 </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_23">
-                  <item>
-                   <layout class="QGridLayout" name="gridLayout_9">
-                    <item row="0" column="0">
-                     <widget class="QLabel" name="label_3">
-                      <property name="text">
-                       <string>  工件转速:</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="1">
-                     <widget class="QLineEdit" name="lineEdit_constCSpeed">
-                      <property name="styleSheet">
-                       <string notr="true">background-color: rgb(255, 255, 255);</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="2">
-                     <widget class="QLabel" name="label_40">
-                      <property name="text">
-                       <string>rpm</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="1" column="0">
-                     <widget class="QLabel" name="label_54">
-                      <property name="text">
-                       <string>抛光头转速:</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="1" column="1">
-                     <widget class="QLineEdit" name="lineEdit_Toolspeed">
-                      <property name="sizePolicy">
-                       <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                       </sizepolicy>
-                      </property>
-                      <property name="styleSheet">
-                       <string notr="true">background-color: rgb(255, 255, 255);</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="1" column="2">
-                     <widget class="QLabel" name="label_41">
-                      <property name="text">
-                       <string>rpm</string>
                       </property>
                      </widget>
                     </item>
@@ -1456,6 +1771,11 @@ QPushButton:pressed
                    <layout class="QGridLayout" name="gridLayout">
                     <item row="1" column="0">
                      <widget class="QLabel" name="label_47">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>      磨头类型：</string>
                       </property>
@@ -1463,6 +1783,11 @@ QPushButton:pressed
                     </item>
                     <item row="1" column="3">
                      <widget class="QLabel" name="label_49">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>mm</string>
                       </property>
@@ -1470,6 +1795,17 @@ QPushButton:pressed
                     </item>
                     <item row="0" column="1" colspan="2">
                      <widget class="QComboBox" name="comboBox_dataDistance">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="styleSheet">
                        <string notr="true">/*按钮普通态*/
 QComboBox{
@@ -1497,6 +1833,11 @@ QComboBox{
                     </item>
                     <item row="0" column="3">
                      <widget class="QLabel" name="label_48">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>mm</string>
                       </property>
@@ -1504,6 +1845,11 @@ QComboBox{
                     </item>
                     <item row="0" column="0">
                      <widget class="QLabel" name="label_46">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>      数据间隔：</string>
                       </property>
@@ -1511,6 +1857,11 @@ QComboBox{
                     </item>
                     <item row="2" column="0">
                      <widget class="QLabel" name="label_50">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>  工件转动方向：</string>
                       </property>
@@ -1518,6 +1869,17 @@ QComboBox{
                     </item>
                     <item row="3" column="1" colspan="2">
                      <widget class="QComboBox" name="comboBox_ToolDirect">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="styleSheet">
                        <string notr="true">/*按钮普通态*/
 QComboBox{
@@ -1542,6 +1904,17 @@ QComboBox{
                     </item>
                     <item row="2" column="1" colspan="2">
                      <widget class="QComboBox" name="comboBox_Cdirect">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="styleSheet">
                        <string notr="true">/*按钮普通态*/
 QComboBox{
@@ -1566,6 +1939,11 @@ QComboBox{
                     </item>
                     <item row="3" column="0">
                      <widget class="QLabel" name="label_51">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="text">
                        <string>抛光头转动方向：</string>
                       </property>
@@ -1573,6 +1951,17 @@ QComboBox{
                     </item>
                     <item row="1" column="1" colspan="2">
                      <widget class="QComboBox" name="comboBox_toolRaidus">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
                       <property name="styleSheet">
                        <string notr="true">/*按钮普通态*/
 QComboBox{
@@ -1600,6 +1989,140 @@ QComboBox{
                  </layout>
                 </widget>
                </item>
+               <item row="1" column="0">
+                <spacer name="verticalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Fixed</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="0" column="0">
+                <widget class="QGroupBox" name="groupBox_5">
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="title">
+                  <string>转速</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_23">
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_9">
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_3">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>  工件转速:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QLineEdit" name="lineEdit_constCSpeed">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(255, 255, 255);</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QLabel" name="label_40">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>rpm</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_54">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>抛光头转速:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="lineEdit_Toolspeed">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(255, 255, 255);</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QLabel" name="label_41">
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>rpm</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QGroupBox" name="groupBox_17">
+                 <property name="title">
+                  <string>补偿参数</string>
+                 </property>
+                 <widget class="QLabel" name="label_84">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>30</y>
+                    <width>54</width>
+                    <height>12</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>TextLabel</string>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
               </layout>
              </item>
              <item>
@@ -1613,8 +2136,13 @@ QComboBox{
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
-                    <height>20</height>
+                    <height>30</height>
                    </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
                   </property>
                   <property name="text">
                    <string>保存</string>
@@ -1626,8 +2154,13 @@ QComboBox{
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
-                    <height>20</height>
+                    <height>30</height>
                    </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
                   </property>
                   <property name="text">
                    <string>读取</string>
@@ -1639,8 +2172,13 @@ QComboBox{
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
-                    <height>20</height>
+                    <height>30</height>
                    </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
                   </property>
                   <property name="text">
                    <string>应用</string>
@@ -1652,8 +2190,13 @@ QComboBox{
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
-                    <height>20</height>
+                    <height>30</height>
                    </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
                   </property>
                   <property name="text">
                    <string>干涉检查</string>
@@ -1682,88 +2225,79 @@ QComboBox{
             </layout>
            </widget>
            <widget class="QWidget" name="page_5">
-            <widget class="QCustomPlot" name="customPlot_2" native="true">
+            <widget class="QWidget" name="verticalLayoutWidget">
              <property name="geometry">
               <rect>
-               <x>9</x>
-               <y>224</y>
-               <width>823</width>
-               <height>400</height>
+               <x>0</x>
+               <y>9</y>
+               <width>941</width>
+               <height>661</height>
               </rect>
              </property>
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>400</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-color: rgb(255, 255, 255);</string>
-             </property>
-            </widget>
-            <widget class="QPushButton" name="pushButton_50">
-             <property name="geometry">
-              <rect>
-               <x>520</x>
-               <y>90</y>
-               <width>101</width>
-               <height>31</height>
-              </rect>
-             </property>
-             <property name="text">
-              <string>PushButton</string>
-             </property>
-            </widget>
-            <widget class="QLabel" name="label_60">
-             <property name="geometry">
-              <rect>
-               <x>10</x>
-               <y>170</y>
-               <width>147</width>
-               <height>21</height>
-              </rect>
-             </property>
-             <property name="font">
-              <font>
-               <family>3ds</family>
-               <pointsize>16</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>面型误差数据：</string>
-             </property>
-            </widget>
-            <widget class="QLineEdit" name="lineEdit_dataname">
-             <property name="geometry">
-              <rect>
-               <x>160</x>
-               <y>170</y>
-               <width>133</width>
-               <height>20</height>
-              </rect>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-color: rgb(255, 255, 255);</string>
-             </property>
-            </widget>
-            <widget class="QPushButton" name="pushButton_15">
-             <property name="geometry">
-              <rect>
-               <x>330</x>
-               <y>160</y>
-               <width>91</width>
-               <height>31</height>
-              </rect>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>86</width>
-               <height>20</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>导 进</string>
-             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <property name="spacing">
+               <number>6</number>
+              </property>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_7">
+                <property name="spacing">
+                 <number>2</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_60">
+                  <property name="font">
+                   <font>
+                    <family>3ds</family>
+                    <pointsize>16</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>面型误差数据：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_dataname">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_15">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>导 进</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QCustomPlot" name="customPlot_2" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>400</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
             </widget>
            </widget>
            <widget class="QWidget" name="page_8">
@@ -1773,7 +2307,7 @@ QComboBox{
                <property name="font">
                 <font>
                  <family>3ds</family>
-                 <pointsize>7</pointsize>
+                 <pointsize>14</pointsize>
                 </font>
                </property>
                <property name="styleSheet">
@@ -1786,7 +2320,7 @@ QComboBox{
                <property name="font">
                 <font>
                  <family>3ds</family>
-                 <pointsize>7</pointsize>
+                 <pointsize>15</pointsize>
                 </font>
                </property>
                <property name="styleSheet">
@@ -1804,8 +2338,13 @@ QComboBox{
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
-                   <height>20</height>
+                   <height>30</height>
                   </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">/*按钮普通态*/
@@ -1846,8 +2385,13 @@ QPushButton:pressed
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
-                   <height>20</height>
+                   <height>30</height>
                   </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
                  </property>
                  <property name="text">
                   <string>导入标准代码</string>
@@ -1866,8 +2410,13 @@ QPushButton:pressed
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
-                   <height>20</height>
+                   <height>30</height>
                   </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
                  </property>
                  <property name="text">
                   <string>生成补正代码</string>
@@ -1879,8 +2428,13 @@ QPushButton:pressed
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
-                   <height>20</height>
+                   <height>30</height>
                   </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
                  </property>
                  <property name="text">
                   <string>导入补正代码</string>
@@ -1893,6 +2447,11 @@ QPushButton:pressed
               <layout class="QHBoxLayout" name="horizontalLayout_11">
                <item>
                 <widget class="QLabel" name="label_115">
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
                  <property name="text">
                   <string>标准加工次数：</string>
                  </property>
@@ -1900,6 +2459,12 @@ QPushButton:pressed
                </item>
                <item>
                 <widget class="QLineEdit" name="lineEdit_ProcessCycle_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">background-color: rgb(255, 255, 255);</string>
                  </property>
@@ -1911,6 +2476,11 @@ QPushButton:pressed
               <layout class="QHBoxLayout" name="horizontalLayout_12">
                <item>
                 <widget class="QLabel" name="label_117">
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
                  <property name="text">
                   <string>补正加工次数：</string>
                  </property>
@@ -1918,6 +2488,12 @@ QPushButton:pressed
                </item>
                <item>
                 <widget class="QLineEdit" name="lineEdit_ProcessCycle_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">background-color: rgb(255, 255, 255);</string>
                  </property>
@@ -1929,10 +2505,112 @@ QPushButton:pressed
            </widget>
            <widget class="QWidget" name="page_6">
             <layout class="QGridLayout" name="gridLayout_29">
+             <item row="1" column="1">
+              <widget class="QGroupBox" name="groupBox_10">
+               <property name="minimumSize">
+                <size>
+                 <width>240</width>
+                 <height>82</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>240</width>
+                 <height>82</height>
+                </size>
+               </property>
+               <property name="title">
+                <string/>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_8">
+                <item>
+                 <widget class="QPushButton" name="pushButton_16">
+                  <property name="minimumSize">
+                   <size>
+                    <width>80</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>执行</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_12">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_17">
+                  <property name="minimumSize">
+                   <size>
+                    <width>80</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>终止</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>297</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="1" column="2">
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>297</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
              <item row="0" column="0" colspan="3">
               <layout class="QVBoxLayout" name="verticalLayout_4">
                <item>
                 <layout class="QHBoxLayout" name="horizontalLayout">
+                 <property name="spacing">
+                  <number>1</number>
+                 </property>
+                 <property name="sizeConstraint">
+                  <enum>QLayout::SetMinimumSize</enum>
+                 </property>
                  <item>
                   <widget class="QLabel" name="label_4">
                    <property name="font">
@@ -1948,6 +2626,12 @@ QPushButton:pressed
                  </item>
                  <item>
                   <widget class="QLineEdit" name="lineEdit_11">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true"> background-color: rgb(255, 255, 255);</string>
                    </property>
@@ -1964,7 +2648,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -1977,7 +2661,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -1990,7 +2674,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2003,7 +2687,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2016,7 +2700,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2029,7 +2713,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2042,7 +2726,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2055,7 +2739,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2068,7 +2752,7 @@ QPushButton:pressed
                      <property name="minimumSize">
                       <size>
                        <width>300</width>
-                       <height>0</height>
+                       <height>35</height>
                       </size>
                      </property>
                      <property name="maximumSize">
@@ -2087,7 +2771,7 @@ QPushButton:pressed
                      <property name="minimumSize">
                       <size>
                        <width>300</width>
-                       <height>0</height>
+                       <height>35</height>
                       </size>
                      </property>
                      <property name="maximumSize">
@@ -2106,7 +2790,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2119,7 +2803,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2132,7 +2816,7 @@ QPushButton:pressed
                      <property name="minimumSize">
                       <size>
                        <width>300</width>
-                       <height>0</height>
+                       <height>35</height>
                       </size>
                      </property>
                      <property name="maximumSize">
@@ -2151,7 +2835,7 @@ QPushButton:pressed
                      <property name="minimumSize">
                       <size>
                        <width>300</width>
-                       <height>0</height>
+                       <height>35</height>
                       </size>
                      </property>
                      <property name="maximumSize">
@@ -2170,7 +2854,7 @@ QPushButton:pressed
                      <property name="minimumSize">
                       <size>
                        <width>300</width>
-                       <height>0</height>
+                       <height>35</height>
                       </size>
                      </property>
                      <property name="maximumSize">
@@ -2237,7 +2921,7 @@ QPushButton:pressed
                      <property name="minimumSize">
                       <size>
                        <width>300</width>
-                       <height>0</height>
+                       <height>35</height>
                       </size>
                      </property>
                      <property name="maximumSize">
@@ -2256,7 +2940,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2269,7 +2953,7 @@ QPushButton:pressed
                      <property name="minimumSize">
                       <size>
                        <width>300</width>
-                       <height>0</height>
+                       <height>35</height>
                       </size>
                      </property>
                      <property name="maximumSize">
@@ -2288,7 +2972,7 @@ QPushButton:pressed
                      <property name="minimumSize">
                       <size>
                        <width>300</width>
-                       <height>0</height>
+                       <height>35</height>
                       </size>
                      </property>
                      <property name="maximumSize">
@@ -2307,7 +2991,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2320,7 +3004,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2333,7 +3017,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2368,7 +3052,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2381,7 +3065,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2394,7 +3078,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2407,7 +3091,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2420,7 +3104,7 @@ QPushButton:pressed
                      <property name="minimumSize">
                       <size>
                        <width>300</width>
-                       <height>0</height>
+                       <height>35</height>
                       </size>
                      </property>
                      <property name="maximumSize">
@@ -2439,7 +3123,7 @@ QPushButton:pressed
                      <property name="minimumSize">
                       <size>
                        <width>300</width>
-                       <height>0</height>
+                       <height>35</height>
                       </size>
                      </property>
                      <property name="maximumSize">
@@ -2458,7 +3142,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2471,7 +3155,7 @@ QPushButton:pressed
                      <property name="font">
                       <font>
                        <family>Times New Roman</family>
-                       <pointsize>10</pointsize>
+                       <pointsize>12</pointsize>
                       </font>
                      </property>
                      <property name="text">
@@ -2500,6 +3184,12 @@ QPushButton:pressed
                  </item>
                  <item row="1" column="1">
                   <widget class="QProgressBar" name="progressBar">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>35</height>
+                    </size>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true">background-color: rgb(255, 255, 255);
 alternate-background-color: rgb(85, 170, 0);</string>
@@ -2524,6 +3214,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                  </item>
                  <item row="0" column="5">
                   <widget class="QLineEdit" name="lineEdit_23">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>35</height>
+                    </size>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true">background-color: rgb(255, 255, 255);</string>
                    </property>
@@ -2560,6 +3256,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                  </item>
                  <item row="0" column="1">
                   <widget class="QLineEdit" name="lineEdit_22">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>35</height>
+                    </size>
+                   </property>
                    <property name="styleSheet">
                     <string notr="true">background-color: rgb(255, 255, 255);</string>
                    </property>
@@ -2598,79 +3300,6 @@ alternate-background-color: rgb(85, 170, 0);</string>
                </item>
               </layout>
              </item>
-             <item row="1" column="0">
-              <spacer name="horizontalSpacer_5">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>297</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item row="1" column="1">
-              <widget class="QGroupBox" name="groupBox_10">
-               <property name="minimumSize">
-                <size>
-                 <width>240</width>
-                 <height>82</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>240</width>
-                 <height>82</height>
-                </size>
-               </property>
-               <property name="title">
-                <string/>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_8">
-                <item>
-                 <widget class="QPushButton" name="pushButton_16">
-                  <property name="minimumSize">
-                   <size>
-                    <width>80</width>
-                    <height>30</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>执行</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="pushButton_17">
-                  <property name="minimumSize">
-                   <size>
-                    <width>80</width>
-                    <height>30</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>终止</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-             <item row="1" column="2">
-              <spacer name="horizontalSpacer_6">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>297</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
             </layout>
            </widget>
            <widget class="QWidget" name="page_7">
@@ -2680,9 +3309,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
                <property name="sizeHint" stdset="0">
                 <size>
-                 <width>40</width>
+                 <width>50</width>
                  <height>20</height>
                 </size>
                </property>
@@ -2702,7 +3334,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
-                    <height>20</height>
+                    <height>30</height>
                    </size>
                   </property>
                   <property name="text">
@@ -2715,7 +3347,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                   <property name="minimumSize">
                    <size>
                     <width>80</width>
-                    <height>20</height>
+                    <height>30</height>
                    </size>
                   </property>
                   <property name="text">
@@ -2728,7 +3360,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
-                    <height>20</height>
+                    <height>30</height>
                    </size>
                   </property>
                   <property name="text">
@@ -2741,7 +3373,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
-                    <height>20</height>
+                    <height>30</height>
                    </size>
                   </property>
                   <property name="text">
@@ -2760,6 +3392,11 @@ alternate-background-color: rgb(85, 170, 0);</string>
                  <height>200</height>
                 </size>
                </property>
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
                <property name="title">
                 <string>相对坐标</string>
                </property>
@@ -2774,7 +3411,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -2787,7 +3424,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -2800,7 +3437,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -2813,7 +3450,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -2826,7 +3463,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -2840,6 +3477,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                  <layout class="QVBoxLayout" name="verticalLayout_7">
                   <item>
                    <widget class="QLineEdit" name="lineEdit_33">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -2847,6 +3490,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                   </item>
                   <item>
                    <widget class="QLineEdit" name="lineEdit_25">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -2854,6 +3503,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                   </item>
                   <item>
                    <widget class="QLineEdit" name="lineEdit_31">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -2861,6 +3516,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                   </item>
                   <item>
                    <widget class="QLineEdit" name="lineEdit_28">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -2868,6 +3529,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                   </item>
                   <item>
                    <widget class="QLineEdit" name="lineEdit_27">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -2882,7 +3549,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -2895,7 +3562,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -2908,7 +3575,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -2921,7 +3588,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -2934,7 +3601,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -2968,7 +3635,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                       <property name="font">
                        <font>
                         <family>Times New Roman</family>
-                        <pointsize>10</pointsize>
+                        <pointsize>12</pointsize>
                        </font>
                       </property>
                       <property name="text">
@@ -2981,7 +3648,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                       <property name="font">
                        <font>
                         <family>Times New Roman</family>
-                        <pointsize>10</pointsize>
+                        <pointsize>12</pointsize>
                        </font>
                       </property>
                       <property name="text">
@@ -2994,7 +3661,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                       <property name="font">
                        <font>
                         <family>Times New Roman</family>
-                        <pointsize>10</pointsize>
+                        <pointsize>12</pointsize>
                        </font>
                       </property>
                       <property name="text">
@@ -3007,7 +3674,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                       <property name="font">
                        <font>
                         <family>Times New Roman</family>
-                        <pointsize>10</pointsize>
+                        <pointsize>12</pointsize>
                        </font>
                       </property>
                       <property name="text">
@@ -3020,7 +3687,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                       <property name="font">
                        <font>
                         <family>Times New Roman</family>
-                        <pointsize>10</pointsize>
+                        <pointsize>12</pointsize>
                        </font>
                       </property>
                       <property name="text">
@@ -3034,6 +3701,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                    <layout class="QVBoxLayout" name="verticalLayout_6">
                     <item>
                      <widget class="QLineEdit" name="lineEdit_34">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
                       <property name="styleSheet">
                        <string notr="true">background-color: rgb(255, 255, 255);</string>
                       </property>
@@ -3041,6 +3714,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     </item>
                     <item>
                      <widget class="QLineEdit" name="lineEdit_26">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
                       <property name="styleSheet">
                        <string notr="true">background-color: rgb(255, 255, 255);</string>
                       </property>
@@ -3048,6 +3727,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     </item>
                     <item>
                      <widget class="QLineEdit" name="lineEdit_32">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
                       <property name="styleSheet">
                        <string notr="true">background-color: rgb(255, 255, 255);</string>
                       </property>
@@ -3055,6 +3740,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     </item>
                     <item>
                      <widget class="QLineEdit" name="lineEdit_29">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
                       <property name="styleSheet">
                        <string notr="true">background-color: rgb(255, 255, 255);</string>
                       </property>
@@ -3062,6 +3753,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     </item>
                     <item>
                      <widget class="QLineEdit" name="lineEdit_30">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>30</height>
+                       </size>
+                      </property>
                       <property name="styleSheet">
                        <string notr="true">background-color: rgb(255, 255, 255);</string>
                       </property>
@@ -3078,7 +3775,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3091,7 +3788,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3104,7 +3801,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3117,7 +3814,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3130,7 +3827,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3162,6 +3859,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                  <layout class="QGridLayout" name="gridLayout_2">
                   <item row="1" column="2" colspan="2">
                    <widget class="QLineEdit" name="lineEdit_36">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -3172,7 +3875,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3185,7 +3888,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3195,6 +3898,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                   </item>
                   <item row="4" column="2" colspan="2">
                    <widget class="QLineEdit" name="lineEdit_39">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -3202,6 +3911,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                   </item>
                   <item row="2" column="2" colspan="2">
                    <widget class="QLineEdit" name="lineEdit_37">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -3212,7 +3927,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3225,7 +3940,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3238,7 +3953,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3248,6 +3963,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                   </item>
                   <item row="5" column="3">
                    <widget class="QLineEdit" name="lineEdit_45">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -3261,6 +3982,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="enabled">
                      <bool>true</bool>
                     </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -3271,7 +3998,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3284,7 +4011,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3294,6 +4021,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                   </item>
                   <item row="3" column="2" colspan="2">
                    <widget class="QLineEdit" name="lineEdit_38">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -3304,7 +4037,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3317,7 +4050,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3330,7 +4063,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3343,7 +4076,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3356,7 +4089,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3370,6 +4103,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                  <layout class="QGridLayout" name="gridLayout_3">
                   <item row="3" column="1">
                    <widget class="QLineEdit" name="lineEdit_51">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -3380,7 +4119,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3393,7 +4132,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3403,6 +4142,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                   </item>
                   <item row="0" column="1">
                    <widget class="QLineEdit" name="lineEdit_47">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -3413,7 +4158,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3426,7 +4171,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3439,7 +4184,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3452,7 +4197,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3462,6 +4207,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                   </item>
                   <item row="4" column="1">
                    <widget class="QLineEdit" name="lineEdit_46">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -3469,6 +4220,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                   </item>
                   <item row="1" column="1">
                    <widget class="QLineEdit" name="lineEdit_49">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -3476,6 +4233,12 @@ alternate-background-color: rgb(85, 170, 0);</string>
                   </item>
                   <item row="2" column="1">
                    <widget class="QLineEdit" name="lineEdit_48">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
@@ -3486,7 +4249,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3499,7 +4262,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3512,7 +4275,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3525,7 +4288,7 @@ alternate-background-color: rgb(85, 170, 0);</string>
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3535,6 +4298,17 @@ alternate-background-color: rgb(85, 170, 0);</string>
                   </item>
                   <item row="5" column="1">
                    <widget class="QComboBox" name="comboBox_5">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">/*按钮普通态*/
 QComboBox{
@@ -3566,7 +4340,7 @@ QComboBox{
                     <property name="font">
                      <font>
                       <family>Times New Roman</family>
-                      <pointsize>10</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3592,13 +4366,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3611,13 +4385,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3630,13 +4404,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3649,13 +4423,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3668,13 +4442,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3687,13 +4461,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3706,13 +4480,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3725,13 +4499,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3744,13 +4518,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3763,13 +4537,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3782,13 +4556,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3801,13 +4575,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3820,13 +4594,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3848,13 +4622,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3867,13 +4641,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3886,13 +4660,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3905,13 +4679,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3924,13 +4698,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3943,13 +4717,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3962,13 +4736,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -3981,13 +4755,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -4004,13 +4778,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -4020,6 +4794,17 @@ QComboBox{
                   </item>
                   <item row="3" column="0" colspan="3">
                    <widget class="QComboBox" name="comboBox_7">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">/*按钮普通态*/
 QComboBox{
@@ -4044,6 +4829,17 @@ QComboBox{
                   </item>
                   <item row="2" column="0" colspan="3">
                    <widget class="QComboBox" name="comboBox_8">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">/*按钮普通态*/
 QComboBox{
@@ -4071,13 +4867,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -4090,13 +4886,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -4109,13 +4905,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -4125,6 +4921,17 @@ QComboBox{
                   </item>
                   <item row="4" column="0">
                    <widget class="QComboBox" name="comboBox_6">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">/*按钮普通态*/
 QComboBox{
@@ -4152,13 +4959,13 @@ QComboBox{
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="font">
                      <font>
                       <family>3ds</family>
-                      <pointsize>8</pointsize>
+                      <pointsize>12</pointsize>
                      </font>
                     </property>
                     <property name="text">
@@ -4541,7 +5348,7 @@ QPushButton:pressed
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1053</width>
+     <width>1145</width>
      <height>23</height>
     </rect>
    </property>

@@ -5,6 +5,9 @@
 #include "produce_gcode.h"
 #include"QMessageBox"
 #include"QDebug"
+#include "qvariantlistlistmodel.h"
+#include "QDir"
+#include <QCoreApplication>
 using namespace std;
 using namespace ui;
 
@@ -866,4 +869,40 @@ double ** Produce_Gcode::Test2DArray(unsigned r, unsigned c){
     return arr2d;
 }
 
+QVector<double> readFeedVelocityFile(QString fileName)
+{
+
+    QString str;//参数文件字符
+    QString strPath=QCoreApplication::applicationDirPath();//获取程序当前路径
+    QDir dir(strPath);//实例化文件路径类
+    QFile *file=new QFile();//实例化文件读取对象
+   // QStringList list;
+    QVector<double> Feedspeed;
+
+    QString filepath=dir.path()+"\\"+fileName;
+    if(filepath.isEmpty())//取消读取
+        return Feedspeed;
+    file->setFileName(filepath);//目标文件
+
+    if(!file->open(QIODevice::ReadOnly|QIODevice::Text))
+    {
+        QMessageBox::information(NULL,"提示！","读取进给速度文件失败！");
+      // QMessageBox()
+        return Feedspeed;
+
+    }
+
+    while (!file->atEnd())
+    {
+
+        str=file->readLine();
+        str=str.remove("\n");
+        //list.append(str);
+
+     Feedspeed.push_back(str.trimmed().toDouble());
+    }
+
+    return  Feedspeed;
+
+}
 
